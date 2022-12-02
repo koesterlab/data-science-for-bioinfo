@@ -1,0 +1,39 @@
+name: set up, test and build with mdbook, deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_with_checks_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Read versions.env
+        id: versions
+        run: |
+          . ./versions.env
+          echo "mdbook_version=$MDBOOK_VERSION" >>$GITHUB_OUTPUT
+          echo "linkcheck_version=$LINKCHECK_VERSION" >>$GITHUB_OUTPUT
+          echo "opengh_version=$OPENGH_VERSION" >>$GITHUB_OUTPUT
+
+      - name: Setup and build mdbook
+        uses: jontze/action-mdbook@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Optional Plugins have to be enabled with a version
+          mdbook-version: "~${{ steps.versions.outputs.mdbook_version }}" # Use a semver compatible string
+          use-linkcheck: true
+          linkcheck-version: "~${{ steps.versions.outputs.linkcheck_version }}"
+          use-opengh: true
+          opengh-version: "~${{ steps.versions.outputs.opengh_version }}"
+        run: mdbook build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book
