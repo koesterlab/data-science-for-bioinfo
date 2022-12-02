@@ -1,0 +1,1 @@
+# useful coding conventions
