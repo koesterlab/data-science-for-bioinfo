@@ -14,7 +14,7 @@ jobs:
       - name: Read versions.env
         id: versions
         run: |
-          . ./versions.env
+          . .github/workflows/versions.env
           echo "mdbook_version=$MDBOOK_VERSION" >>$GITHUB_OUTPUT
           echo "linkcheck_version=$LINKCHECK_VERSION" >>$GITHUB_OUTPUT
           echo "opengh_version=$OPENGH_VERSION" >>$GITHUB_OUTPUT
