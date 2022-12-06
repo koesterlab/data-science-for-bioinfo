@@ -1,7 +1,5 @@
 [book]
 authors = ["David Laehnemann"]
-user = "koesterlab"
-project = "data-science-for-bioinfo"
 language = "en"
 multilingual = false
 src = "src"
@@ -13,7 +11,7 @@ renderer = ["html"]
 
 [output.html]
 # Required: Your repository URL used in the link.
-git-repository-url = "https://github.com/$user/$project"
+git-repository-url = "https://github.com/koesterlab/data-science-for-bioinfo"
 
 # The text to use in the footer.
 # The link text is marked by `[]`
