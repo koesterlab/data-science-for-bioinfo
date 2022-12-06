@@ -4,7 +4,7 @@
 
 - [Languages](languages/README.md)
   - [R](languages/r.md)
-  - [python)](languages/python.md)
+  - [python](languages/python.md)
 
 - [Data visualization](data_viz/README.md)
   - [colorblind safe palettes](data_viz/colorblind.md)
