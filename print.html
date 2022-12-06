@@ -147,7 +147,69 @@ The only thing to keep in mind is to keep this collection a welcoming place by f
 <div style="break-before: page; page-break-before: always;"></div><h1 id="languages"><a class="header" href="#languages">Languages</a></h1>
 <p>In this section, we'll gather useful resources for different programming languages.
 Each subsection starts out with learning resources to get you started.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="r-and-the-tidyverse"><a class="header" href="#r-and-the-tidyverse">R and the tidyverse</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="r"><a class="header" href="#r">R</a></h1>
+<h2 id="learning-programming-with-r"><a class="header" href="#learning-programming-with-r">learning programming with R</a></h2>
+<p>If you are new to programming and want to start learning using R, the free online book <a href="https://rstudio-education.github.io/hopr/">Hands-On Programming with R</a> is a great place to start.
+It really starts from scratch, including information on <a href="https://rstudio-education.github.io/hopr/starting.html">how to install R and Rstudio</a> and getting you acquainted with basic principles of programming through hands-on excercises.</p>
+<h2 id="r4ds-r-for-data-science"><a class="header" href="#r4ds-r-for-data-science">R4DS: R for Data Science</a></h2>
+<p>If you have programmed before and want to learn how to use R for data analysis, the free online book <a href="https://r4ds.hadley.nz/">R for Data Science</a> is all you need.
+It introduces both concepts and tools in a very accessible way, including example code and coding excercises.
+It is based on the <a href="languages/r.html#tidyverse">tidyverse</a> packages.</p>
+<h2 id="tidyverse"><a class="header" href="#tidyverse">tidyverse</a></h2>
+<p>Use the <a href="https://www.tidyverse.org/">tidyverse</a> for modern, vectorized, and efficient code, with excellent documentation (and cool package badges;).
+If you want a thorough introduction, the <a href="languages/r.html#r4ds-r-for-data-science">R4DS book</a> is there for you.
+And if you want to jump right in, here's a table of the most important packages and their online documentation, in the order that you will probably most often use them in a project:</p>
+<h3 id="important-packages"><a class="header" href="#important-packages">important packages</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>name</th><th>online docs (cheatsheets!)</th><th>purpose</th></tr></thead><tbody>
+<tr><td>readr</td><td>https://readr.tidyverse.org/</td><td>read in (rectangular) data (csv, tsv, xslx, ...)</td></tr>
+<tr><td>tidyr</td><td>https://tidyr.tidyverse.org/</td><td>get data into tidy format</td></tr>
+<tr><td>stringr</td><td>https://stringr.tidyverse.org/</td><td>string manipulation</td></tr>
+<tr><td>dplyr</td><td>https://dplyr.tidyverse.org/</td><td>transform data (in tidy format) with sql-like syntax</td></tr>
+<tr><td>ggplot2</td><td>https://ggplot2.tidyverse.org/</td><td>easy and versatile plotting with the grammar of graphics</td></tr>
+</tbody></table>
+</div>
+<h3 id="jump-right-in"><a class="header" href="#jump-right-in">jump right in</a></h3>
+<p>If you do want to jump right in, depending on you previous exposure to the tidyverse, I recommend to at least:</p>
+<ol>
+<li>Get all the cheatsheets and have those ready on your machine or even printed out.
+Either from the online documentation linked above, or from the Rstudio compilation of all tidyverse cheatsheets.</li>
+<li>Read through the introductions of the online vignettes above, and the conceptual vignettes that they link to.
+They do a very good job at explaining basic concepts that will make writing analyses with the tidyverse a lot easier and more intuitive.</li>
+</ol>
+<p>The most important concepts are probably:</p>
+<ol>
+<li>Always get your data into a <strong>tidy format</strong> first.
+How tidy data should look and why, is described <a href="https://tidyr.tidyverse.org/articles/tidy-data.html">in this tidy data vignette</a>.</li>
+<li>When working in the tidyverse, you will always use <strong>pipes</strong>.
+There is a <a href="https://r4ds.had.co.nz/pipes.html">good introductory chapter on pipes in the R4DS online book</a>.</li>
+<li>There’s also a <a href="https://dplyr.tidyverse.org/articles/two-table.html">vignette on how to work with two tables</a>.
+For example, if you want to filter one table to only include entries also present in a second table.
+Or if you want to use a second table, to add annotation fields to a first table.</li>
+</ol>
+<h3 id="style-guide"><a class="header" href="#style-guide">style guide</a></h3>
+<p><a href="https://style.tidyverse.org/">https://style.tidyverse.org</a></p>
+<p>A detailed and well-written style guide for using R with the tidyverse.
+It covers topics like good names, syntax recommendations and best practices for error messages.
+Many of the things covered here, can also be applied in other programming languages.</p>
+<h3 id="styler-automatic-formatting"><a class="header" href="#styler-automatic-formatting">styler: automatic formatting</a></h3>
+<p><a href="https://styler.r-lib.org/">https://styler.r-lib.org</a></p>
+<p>Automatic formatting according to tidyverse style guide.
+This is also available for <a href="languages/r.html#alternative-ide-r-reditorsupport-extension-for-vs-code">VS Code via the <code>R</code> (or <code>REditorSupport</code>) extensions</a>.</p>
+<h2 id="rstudio-an-integrated-development-environment-tailor-made-for-r"><a class="header" href="#rstudio-an-integrated-development-environment-tailor-made-for-r">Rstudio: an integrated development environment tailor-made for R</a></h2>
+<p>Rstudio is an IDE dedicated to R, and probably the most comprehensive IDE for this language and very easy to get going with a productive workflow.
+You can get the free desktop version for your operating system on posit's <a href="https://posit.co/download/rstudio-desktop/#download">Rstudio download page</a>.</p>
+<p>In Rstudio, you have a console with an interactive R session on the bottom left (like running R on the command line).
+Here, you can always conjure up the help information of any function by putting a question mark in front of it (for example <code>?mutate()</code>) and hitting enter.
+This will open the respective vignette in the bottom right window.
+There, you will first find a description of the function and each of its arguments, and further down some quick examples on tibbles (data frames) that are immediately useable in the interactive session.
+So just copy and paste them, and start modifying them to your needs.</p>
+<p>If you are using Ubuntu as your operating system and want to install R (and R packages) through conda, here's a useful trick:</p>
+<ul>
+<li>Getting Rstudio to use a conda environment with your R installation on Ubuntu: <a href="https://gist.github.com/dlaehnemann/8126c903d560307cb246fa26b52d10de">https://gist.github.com/dlaehnemann/8126c903d560307cb246fa26b52d10de</a></li>
+</ul>
+<h3 id="alternative-ide-r-reditorsupport-extension-for-vs-code"><a class="header" href="#alternative-ide-r-reditorsupport-extension-for-vs-code">alternative IDE: <code>R</code> (<code>REditorSupport</code>) extension for VS Code</a></h3>
+<p><a href="https://github.com/REditorSupport/vscode-R">https://github.com/REditorSupport/vscode-R</a></p>
+<p>Provides full language support for R in VS Code, including code completion, formatting, syntax highlighting, plot and data views, etc. This should make VS Code configurable in the same way that RStudio works.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/$user/$project/edit/main/src/languages/r.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="python-and-pandas-and-polars"><a class="header" href="#python-and-pandas-and-polars">python and pandas (and polars)</a></h1>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/$user/$project/edit/main/src/languages/python.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="data-visualization"><a class="header" href="#data-visualization">Data visualization</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="colorblind-safe-palettes"><a class="header" href="#colorblind-safe-palettes">colorblind safe palettes</a></h1>
