@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build_with_checks_and_deploy:
+  build_with_checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
