@@ -4,4 +4,4 @@
 
 # Data Science for Bioinformatics
 
-A collection of materials, rendered and displayed at []().
+A collection of materials, rendered and displayed at [https://koesterlab.github.io/data-science-for-bioinfo/](https://koesterlab.github.io/data-science-for-bioinfo/).
