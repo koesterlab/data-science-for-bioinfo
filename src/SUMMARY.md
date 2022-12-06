@@ -7,7 +7,7 @@
   - [python](languages/python.md)
 
 - [Data visualization](data_viz/README.md)
-  - [colorblind safe palettes](data_viz/colorblind.md)
+  - [color palettes](data_viz/color_palettes.md)
   - [grammar of graphics](data_viz/grammar_of_graphics.md)
 
 - [Bioinformatics](bioinformatics/README.md)
