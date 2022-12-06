@@ -18,6 +18,7 @@
   - [useful coding conventions](coding_tools/conventions.md)
   - [integrated development environments (IDEs)](coding_tools/ide.md)
   - [version control](coding_tools/version_control.md)
+  - [licensing](coding_tools/licensing.md)
   - [markdown syntax](coding_tools/markdown.md)
 
 - [Workflow management](workflows/README.md)
