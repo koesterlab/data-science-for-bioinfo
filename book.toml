@@ -1,5 +1,7 @@
 [book]
 authors = ["David Laehnemann"]
+user = "koesterlab"
+project = "data-science-for-bioinfo"
 language = "en"
 multilingual = false
 src = "src"
