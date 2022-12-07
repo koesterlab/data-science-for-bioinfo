@@ -7,6 +7,10 @@ It has great usage documentation, so check out [how to get started using biocond
 The first step (also described and linked to on the website) is to install [conda](https://docs.conda.io/projects/conda/en/latest/index.html), the package manager you need to use the bioconda channel.
 Here, we recommend using the [mambaforge installation](https://github.com/conda-forge/miniforge#install).
 
+## conda basics
+
+TODO: add some basic conda commands and good linkouts to the respective documentation
+
 ## contributing to bioconda
 
 While you will nowadays find most bioinformatics packages on bioconda (and checking out a package on bioconda is a great way of checking how often it is downloaded), you will sometimes encounter packages that are not available there.
