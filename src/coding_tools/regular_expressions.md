@@ -17,7 +17,7 @@ These are often referred to as regular expression flavours.
 | ---                                | ---            | ---                  |
 | [linux tools (awk, sed, grep, etc.)](../command_line/linux_tools.md) | [Basic and Extended regexes](https://www.grymoire.com/Unix/Regular.html) |   |
 | [python](../languages/python.md)   | [`re` module](https://docs.python.org/3/library/re.html) / [regex HOWTO](https://docs.python.org/3/howto/regex.html#regex-howto) | [browser-based regex testing](https://pythex.org/) |
-| [R](../languages/r.md)             | [regular expression vignette](https://stringr.tidyverse.org/articles/regular-expressions.html) | [`stringr` package](https://stringr.tidyverse.org/index.html#cheatsheet) |
+| [R](../languages/r.md)             | [regular expression vignette](https://stringr.tidyverse.org/articles/regular-expressions.html) | [`stringr` package cheat sheet](https://stringr.tidyverse.org/index.html#cheatsheet) |
 
 ## why regexes ([xkcd](https://xkcd.com) reasoning)
 
