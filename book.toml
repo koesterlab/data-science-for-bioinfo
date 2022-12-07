@@ -38,6 +38,6 @@ warning-policy = "error"
 # Hint: you can use TOML's raw strings (single quote) to avoid needing to
 # escape things twice.
 exclude = [
-    # the link works in the browser, but linkcheck returns: Server returned 403 Forbidden for https://docs.github.com/en/get-started/quickstart/github-flow
-    'https://docs\.github\.com/en/get-started/quickstart/github-flow'
+    # the respective links work in the browser, but linkcheck returns: Server returned 403 Forbidden for https://docs.github.com/en/get-started/quickstart/github-flow
+    'https://docs\.github\.com/.*'
     ]
