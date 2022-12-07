@@ -15,8 +15,8 @@ As this introduction also mentions, you will then have to venture on to learn ho
 Here comes a tables with resources on the exact regular expression syntax in different tools and languages.
 These are often referred to as regular expression flavours.
 
-| language / tool                    | cheat sheet       | reference      | further resources    |
-| ---                                | ---               | ---            | ---                  |
-| [linux tools (awk, sed, grep, etc.)](../command_line/linux_tools.md) |    | [Basic and Extended regexes](https://www.grymoire.com/Unix/Regular.html) |   |
-| [python](../languages/python.md)   |                   | [`re` module](https://docs.python.org/3/library/re.html) / [regex HOWTO](https://docs.python.org/3/howto/regex.html#regex-howto) | [browser-based regex testing](https://pythex.org/) |
-| [R](../languages/r.md)             | [`stringr` package](https://stringr.tidyverse.org/index.html#cheatsheet) | [regular expression vignette](https://stringr.tidyverse.org/articles/regular-expressions.html) |
+| language / tool                    | reference      | further resources    |
+| ---                                | ---            | ---                  |
+| [linux tools (awk, sed, grep, etc.)](../command_line/linux_tools.md) | [Basic and Extended regexes](https://www.grymoire.com/Unix/Regular.html) |   |
+| [python](../languages/python.md)   | [`re` module](https://docs.python.org/3/library/re.html) / [regex HOWTO](https://docs.python.org/3/howto/regex.html#regex-howto) | [browser-based regex testing](https://pythex.org/) |
+| [R](../languages/r.md)             | [regular expression vignette](https://stringr.tidyverse.org/articles/regular-expressions.html) | [`stringr` package](https://stringr.tidyverse.org/index.html#cheatsheet) |
