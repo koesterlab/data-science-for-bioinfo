@@ -1,6 +1,6 @@
 # regular expressions
 
-[![Wait, forgot to escape a space. Wheeeeee[taptaptap]eeeeee.](https://imgs.xkcd.com/comics/regular_expressions.png)](https://xkcd.com/208)
+[![Wait, forgot to escape a space. Wheeeeee\[taptaptap\]eeeeee.](https://imgs.xkcd.com/comics/regular_expressions.png)](https://xkcd.com/208)
 
 As the above [xkcd](https://xkcd.com) comic suggests, [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) are a really powerful tool to systematically search (and replace) strings in very large text files.
 If you have ever used search-and-replace in a word processor or a spreadsheet software, you have probably seen cases where just searching for a particular word doesn't do the trick.
