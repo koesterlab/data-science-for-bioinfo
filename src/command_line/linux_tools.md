@@ -25,6 +25,12 @@ Most command-line tools have certain standard command-line arguments, that usual
 `less` is a tool for quickly looking at text files on the command line.
 Conjure it up with `less myfile.txt`, scroll up and down with the arrow and page up/down keys, search for something like `thisword` with `/thisword` (followed by enter) and quit by hitting `q`.
 
+## `grep`: line by line plain text file searching
+
+`grep` allows you to search for strings and [regular expressions](../coding_tools/regular_expressions.md) in text files.
+It will return any line containing a search string.
+For example, `grep "gene" myfile.txt` would return any line containing the string `gene` in `myfile.txt`.
+
 ## `sed`: line by line plain text file editing
 
 `sed` is a great tool to work on plain-text files line by line.
