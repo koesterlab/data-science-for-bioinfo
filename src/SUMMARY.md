@@ -20,6 +20,7 @@
   - [version control](coding_tools/version_control.md)
   - [licensing](coding_tools/licensing.md)
   - [markdown syntax](coding_tools/markdown.md)
+  - [regular expressions](coding_tools/regular_expressions.md)
 
 - [Workflow management](workflows/README.md)
   - [Snakemake](workflows/snakemake.md)
