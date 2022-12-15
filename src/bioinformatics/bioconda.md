@@ -9,6 +9,7 @@ Here, we recommend using the [mambaforge installation](https://github.com/conda-
 
 ## conda basics
 
+There is a [separate page with some basic `conda` commands` to get you started](../command_line/conda.md).
 
 ## contributing to bioconda
 
