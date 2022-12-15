@@ -4,12 +4,11 @@
 
 It has great usage documentation, so check out [how to get started using bioconda on its own website](https://bioconda.github.io/#usage).
 
-The first step (also described and linked to on the website) is to install [conda](https://docs.conda.io/projects/conda/en/latest/index.html), the package manager you need to use the bioconda channel.
+The first step (also described and linked to on the website) is to install [conda](../command_line/conda.md), the package manager you need to use the bioconda channel.
 Here, we recommend using the [mambaforge installation](https://github.com/conda-forge/miniforge#install).
 
 ## conda basics
 
-TODO: add some basic conda commands and good linkouts to the respective documentation
 
 ## contributing to bioconda
 
