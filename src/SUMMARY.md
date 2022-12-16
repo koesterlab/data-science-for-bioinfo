@@ -22,6 +22,10 @@
   - [markdown syntax](coding_tools/markdown.md)
   - [regular expressions](coding_tools/regular_expressions.md)
 
+- [Statistics](statistics/README.md)
+  - [bayesian statistics (priors, likelihoods and posterior distributions)](statistics/bayesian.md)
+  - [frequentist statistics (hypothesis tests, p-values, etc.)](statistics/frequentist.md)
+
 - [Workflow management](workflows/README.md)
   - [Snakemake](workflows/snakemake.md)
 
