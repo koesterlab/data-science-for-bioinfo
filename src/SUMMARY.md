@@ -20,6 +20,7 @@
   - [version control](coding_tools/version_control.md)
   - [licensing](coding_tools/licensing.md)
   - [markdown syntax](coding_tools/markdown.md)
+  - [YAML syntax](coding_tools/yaml.md)
   - [regular expressions](coding_tools/regular_expressions.md)
 
 - [Statistics](statistics/README.md)

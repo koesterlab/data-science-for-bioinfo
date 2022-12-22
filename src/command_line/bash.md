@@ -7,3 +7,21 @@ Here are some useful resources:
 
 * [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html): Step-by-step introduction to some of the most important features.
 * [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/): Extensive reference for (almost) all imaginable things in `bash`. For example, you can find a [table of all string operations in `bash`](https://tldp.org/LDP/abs/html/refcards.html#AEN22828).
+
+## bash scripts
+
+You can write full scripts in plain text files, with one command per row and including flow controls (like if-else clauses) in `bash`, so that you can repeat any number of steps easily.
+This script can just contain commands, and if it is saved as `path/to/some_script.bash`, you could execute it with:
+```bash
+bash path/to/some_script.bash
+```
+
+Instead, you can also specify that it is a `bash` script within the file, by including the following first line in the file `path/to/another_script.bash` (if you are interested in what this line does, check out [the explanation on stackoverflow](https://stackoverflow.com/a/21613044)):
+```bash
+#!/usr/bin/env bash
+```
+If you then make that file executable for your user with `chmod u+x another_script.bash`, you can execute it by simply calling the name:
+```bash
+path/to/another_script.bash
+```
+Your shell will know to use the `bash` from your main environment to execute this script.
