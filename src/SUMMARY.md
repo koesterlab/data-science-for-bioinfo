@@ -5,6 +5,7 @@
 - [Languages](languages/README.md)
   - [R](languages/r.md)
   - [python](languages/python.md)
+  - [Rust](languages/rust.md)
 
 - [Data visualization](data_viz/README.md)
   - [color palettes](data_viz/color_palettes.md)
