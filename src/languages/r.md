@@ -5,6 +5,11 @@
 If you are new to programming and want to start learning using R, the free online book [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) is a great place to start.
 It really starts from scratch, including information on [how to install R and Rstudio](https://rstudio-education.github.io/hopr/starting.html) and getting you acquainted with basic principles of programming through hands-on excercises.
 
+## Stat545: Data wrangling, exploration, and analysis with R
+
+If you are looking for a very detailed and granular introduction to data analysis with R, [STAT545: Data wrangling, exploration, and analysis with R](https://stat545.com) by Jenny Brian *et al.* provides a thorough and accessible course.
+You can work through it self-paced.
+
 ## R4DS: R for Data Science
 
 If you have programmed before and want to learn how to use R for data analysis, the free online book [R for Data Science](https://r4ds.hadley.nz/) is all you need.
