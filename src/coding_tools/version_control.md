@@ -8,6 +8,7 @@ And its wide adoption means that it integrates well into the graphical user inte
 
 ### learning git
 
+* [happy git with R](https://happygitwithr.com): A very good and comprehensive, self-paced course for learning how to use git, applying this to coding in R (and integrating it with using the RStudio IDE). 
 * [git book](https://git-scm.com/book/en/v2): The [`Getting Started`](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and [`Git Basics`](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) chapters should get you going, the following chapters introduce you to more advanced applications.
 * [printout git cheat sheet](https://training.github.com/): A git cheat sheet with the most important git subcommands at one glance. Having this printed out and ready at hand will make looking them up a lot quicker. It is provided by GitHub in a great number of languages.
 * [interactive git cheat sheet](https://ndpsoftware.com/git-cheatsheet.html): For interactively exploring different git subcommands and what they do, with a visualization of different places where code changes can be tracked, this is a very cool tool. It's for playing around or looking stuff up once you feel a bit more comfortable with git.
