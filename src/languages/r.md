@@ -10,6 +10,10 @@ It really starts from scratch, including information on [how to install R and Rs
 If you are looking for a very detailed and granular introduction to data analysis with R, [STAT545: Data wrangling, exploration, and analysis with R](https://stat545.com) by Jenny Brian *et al.* provides a thorough and accessible course.
 You can work through it self-paced.
 
+## interactive learning via `swirl` 
+Interactive learning within R command line. From beginner to advanced. User friendly.
+[swirl](https://swirlstats.com/)
+
 ## R4DS: R for Data Science
 
 If you have programmed before and want to learn how to use R for data analysis, the free online book [R for Data Science](https://r4ds.hadley.nz/) is all you need.
