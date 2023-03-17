@@ -14,6 +14,7 @@
   - [markdown syntax](coding_tools/markdown.md)
   - [YAML syntax](coding_tools/yaml.md)
   - [regular expressions](coding_tools/regular_expressions.md)
+  - [interactive reporting](coding_tools/interactive_reporting.md)
 
 - [Command line](command_line/README.md)
   - [bash](command_line/bash.md)
