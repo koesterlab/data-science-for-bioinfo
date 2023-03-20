@@ -1,4 +1,6 @@
-# friction logging
+# user experience / bug reports
+
+## friction logging
 
 [Friction logging](https://developerrelations.com/developer-experience/an-introduction-to-friction-logging) is a technique to narratively describe you user experience with some process.
 This can be the installation and setup of a software, the deployment of a standardized workflow, following along a tutorial, or any other process you go through on your computer.
