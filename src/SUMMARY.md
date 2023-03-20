@@ -8,6 +8,7 @@
 
 - [Coding tools](coding_tools/README.md)
   - [coding conventions](coding_tools/conventions.md)
+  - [friction logging](coding_tools/friction_logging.md)
   - [integrated development environments (IDEs)](coding_tools/ide.md)
   - [licensing](coding_tools/licensing.md)
   - [markdown syntax](coding_tools/markdown.md)
@@ -22,7 +23,7 @@
 - [Data formats and tools](data_formats/README.md)
   - [fastq: sequencing data](data_formats/fastq.md)
   - [tab-/comma-separated values](data_formats/tsv.md)
-  - [YAML syntax](coding_tools/yaml.md)
+  - [YAML syntax](data_formats/yaml.md)
 
 - [Data presentation](data_presentation/README.md)
   - [color palettes](data_presentation/color_palettes.md)
