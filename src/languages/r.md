@@ -2,8 +2,15 @@
 
 ## learning programming with R
 
-If you are new to programming and want to start learning using R, the free online book [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) is a great place to start.
+If you are new to programming and want to start learning using R, the free online book [Hands-On Programming with R (HOPR)](https://rstudio-education.github.io/hopr/) is a great place to start.
 It really starts from scratch, including information on [how to install R and Rstudio](https://rstudio-education.github.io/hopr/starting.html) and getting you acquainted with basic principles of programming through hands-on excercises.
+
+## quick introduction to R
+
+If you have programmed or written scripts before, this [quick `Intro to R`](https://gtk-teaching.github.io/Intro-to-R/) by Greg Tucker-Kellogg should get you up to speed in a few hours.
+It is a self-contained course, that you can easily do at your own pace.
+And it introduces all the necessary basics for starting to work with R.
+For installation, I nevertheless recommend the information on [how to install R and Rstudio from HOPR](https://rstudio-education.github.io/hopr/starting.html).
 
 ## Stat545: Data wrangling, exploration, and analysis with R
 
