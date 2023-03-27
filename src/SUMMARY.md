@@ -20,6 +20,9 @@
   - [conda (software installation)](command_line/conda.md)
   - [linux tools](command_line/linux_tools.md)
 
+- [Data analyses](data_analyses/README.md)
+  - [differential expression analysis](data_analyses/differential_expression.md)
+
 - [Data formats and tools](data_formats/README.md)
   - [fastq: sequencing data](data_formats/fastq.md)
   - [tab-/comma-separated values](data_formats/tsv.md)
