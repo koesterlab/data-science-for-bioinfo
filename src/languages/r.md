@@ -97,5 +97,9 @@ If you are using Ubuntu as your operating system and want to install R (and R pa
 
 Provides full language support for R in VS Code, including code completion, formatting, syntax highlighting, plot and data views, etc. This should make VS Code configurable in the same way that RStudio works.
 
+## error handling
+
+A [recommendation in the `tidyverse` style guide](https://style.tidyverse.org/error-messages.html#error-messages) points to [`cli` package](https://cli.r-lib.org/index.html) that provides [nice functionality for useful error messages via `cli_abort`](https://cli.r-lib.org/reference/cli_abort.html).
+
 
 
