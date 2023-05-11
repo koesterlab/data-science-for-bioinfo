@@ -3,7 +3,11 @@
 `bash` is the most common Linux shell, a command-line environment where you can enter and thus run commands interactively.
 You can find extensive resources about it online, and oftentimes searching for your particular problem online will provide suggestions for solutions.
 
-Here are some useful resources:
+Here are two quick-and-easy introductions that focus on the most important aspects:
+* [Unix Crash Course by Sean Barker (with xkcd comics;)](https://tildesites.bowdoin.edu/~sbarker/unix/), and with some infos on server access on the command-line
+* [Unix Crash Course by `csoft.net`](https://www.csoft.net/docs/course.html), with a bit more on file permissions
+
+And here are some more detailed resources:
 
 * [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html): Step-by-step introduction to some of the most important features.
 * [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/): Extensive reference for (almost) all imaginable things in `bash`. For example, you can find a [table of all string operations in `bash`](https://tldp.org/LDP/abs/html/refcards.html#AEN22828).
