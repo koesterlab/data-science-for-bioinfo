@@ -30,8 +30,8 @@ While we haven't used this workflow ourselves (but might in the future, we'll tr
 TODO: provide good self-contained tutorial for working with RNA-seq data
 
 There are several standardized snakemake workflows, the following ones are maintained by the Kösterlab and associated people: 
-* a workflow using `kallisto` for quantifying transcript expression and [`sleuth`](#sleuth) for determining differentially expressed transcripts: https://snakemake.github.io/snakemake-workflow-catalog/?usage=snakemake-workflows/rna-seq-kallisto-sleuth
-* a workflow using `Star` to align reads to the transcriptome and [`DESeq2`](#deseq2) for determining differentially expressed transcripts: https://snakemake.github.io/snakemake-workflow-catalog/?usage=snakemake-workflows/rna-seq-star-deseq2
+* [a workflow using `kallisto` for quantifying transcript expression and `sleuth` (see below)](https://snakemake.github.io/snakemake-workflow-catalog/?usage=snakemake-workflows/rna-seq-kallisto-sleuth) for determining differentially expressed transcripts
+* [a workflow using `Star` to align reads to the transcriptome and `DESeq2` (see below)](https://snakemake.github.io/snakemake-workflow-catalog/?usage=snakemake-workflows/rna-seq-star-deseq2) for determining differentially expressed transcripts
 
 ## differential expression analysis tools
 
