@@ -35,13 +35,13 @@ And if you want to jump right in, here's a table of the most important packages 
 
 ### important packages
 
-| name    | online docs (cheatsheets!)     | purpose |
-| ---     | ---                            | ---     |
-| readr   | https://readr.tidyverse.org/   | read in (rectangular) data (csv, tsv, xslx, ...) |
-| tidyr   | https://tidyr.tidyverse.org/   | get data into tidy format |
-| stringr | https://stringr.tidyverse.org/ | string manipulation |
-| dplyr   | https://dplyr.tidyverse.org/   | transform data (in tidy format) with sql-like syntax |
-| ggplot2 | https://ggplot2.tidyverse.org/ | easy and versatile plotting with the grammar of graphics |
+| name    | online docs (cheatsheets!)                                     | purpose |
+| ---     | ---                                                            | ---     |
+| readr   | [https://readr.tidyverse.org/](https://readr.tidyverse.org/)   | read in (rectangular) data (csv, tsv, xslx, ...) |
+| tidyr   | [https://tidyr.tidyverse.org/](https://tidyr.tidyverse.org/)   | get data into tidy format |
+| stringr | [https://stringr.tidyverse.org/](https://stringr.tidyverse.org/) | string manipulation |
+| dplyr   | [https://dplyr.tidyverse.org/](https://dplyr.tidyverse.org/)   | transform data (in tidy format) with sql-like syntax |
+| ggplot2 | [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/) | easy and versatile plotting with the grammar of graphics |
 
 ### jump right in
 
