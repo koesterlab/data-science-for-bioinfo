@@ -1,6 +1,6 @@
 # TMUX
 
-[Tmux](https://github.com/tmux/tmux/wiki) is a 'terminal multiplexer' that is useful that allows running workflows in sessions in the terminal while making sure they're still ongoing.
+[Tmux](https://github.com/tmux/tmux/wiki) is a 'terminal multiplexer' that is useful by allowing running workflows in sessions in the terminal while making sure they're still ongoing.
 
 ## Essential instructions
 
