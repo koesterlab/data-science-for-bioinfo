@@ -10,7 +10,7 @@ Thus, commands (and terminal session histories) will be kept alive even when log
 ```
 tmux new -s test
 ```
-2. Detach the session that is created with `Ctrl+B` and release `Ctrl` and `B`, then quickly `D`, so it's basically Ctrl+B and D. The release of Ctrl and B is important to not _kill_ the session instead of _detaching_ (yes, it happens). The message should indicate: 
+2. Detach the session that is created with `Ctrl+B` and release `Ctrl` and `B`, then quickly `D`, so it's basically `Ctrl+B` and `D`. The release of `Ctrl` and `B` is important to not _kill_ the session instead of _detaching_ (yes, it happens). The message should indicate: 
 
 ```
 [detached (from session test)]
