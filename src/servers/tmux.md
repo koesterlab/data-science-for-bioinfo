@@ -1,6 +1,7 @@
 # TMUX
 
-[Tmux](https://github.com/tmux/tmux/wiki) is a 'terminal multiplexer' that is useful by allowing running workflows in sessions in the terminal while making sure they're still ongoing.
+[Tmux](https://github.com/tmux/tmux/wiki) is a 'terminal multiplexer' for running commands and workflows in persistent terminal sessions that you can log out of.
+Thus, commands (and terminal session histories) will be kept alive even when logged out, and you can easily re-attach to a session that is still running. 
 
 ## Essential instructions
 
