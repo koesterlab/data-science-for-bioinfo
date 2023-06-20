@@ -25,7 +25,7 @@ tmux ls
 ```
 tmux attach -t test
 ```
-## Other shortcuts that can be useful:
+## Other shortcuts that can be useful
 
 ```
 CTRL - B - [ //scroll mode
