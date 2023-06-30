@@ -8,7 +8,7 @@ As a side note, it has specific options for retrieving SARS-CoV-2 data.
 It is offered as a conda package and can be installed via:
 
 ```
-conda install -c conda-forge ncbi-datasets-cli
+conda create -n ncbi-download -c conda-forge ncbi-datasets-cli
 ```
 
 ## Example usage
