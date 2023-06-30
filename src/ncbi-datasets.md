@@ -3,6 +3,14 @@
 [ncbi-datasets](https://github.com/ncbi/datasets) is a very-well documented open source tool from NCBI (National Center for Biotechnology Information) for gathering various kinds of data including genes, genomes, annotations etc. belonging to the desired species.
 As a side note, it has specific options for retrieving SARS-CoV-2 data.
 
+## Installation
+
+It is offered as a conda package and can be downloaded via:
+
+```
+conda install -c conda-forge ncbi-datasets-cli
+```
+
 ## Example usage
 
 Retrieval of human reference genome:
