@@ -17,7 +17,7 @@ Retrieval of human reference genome:
 ```
 datasets download genome taxon human --reference --filename human-reference.zip
 ```
-Retrieval of genomic assemblies for a specific SARS-CoV-2 with the host being homo sapiens:
+Retrieval of genomic assemblies for a specific SARS-CoV-2 lineage with the host being homo sapiens:
 ```
 datasets download virus genome taxon SARS-CoV-2 --complete-only --filename B.1.525.zip --lineage B.1.525 --host "homo sapiens"
 ```
