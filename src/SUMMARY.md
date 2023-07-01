@@ -23,6 +23,9 @@
 - [Data analyses](data_analyses/README.md)
   - [differential expression analysis](data_analyses/differential_expression.md)
 
+- [Data downloads](data_downloads/README.md)
+  - [ncbi_datasets](data_downloads/ncbi_datasets_cli.md)
+
 - [Data formats and tools](data_formats/README.md)
   - [fastq: sequencing data](data_formats/fastq.md)
   - [tab-/comma-separated values](data_formats/tsv.md)
