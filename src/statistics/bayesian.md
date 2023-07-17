@@ -19,3 +19,6 @@ It also has R code to follow along.
 You would rather learn bayesian statistics using python?
 Look no further, here's [**Think Bayes 2**](https://allendowney.github.io/ThinkBayes2/) by Allen B. Downey.
 It comes with a Jupyter Notebook per chapter, so you can directly run (and play with) the code in the book.
+
+## Causal inference and Bayesian statistics
+[Richard McElreath](https://xcelab.net/rm/) has a nice introduction to causal inference and applying it to Bayesian methods called [Statistical Rethinking](https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919). It is also available as a set of [lectures on youtube](https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus), updated annually. There is also an R package `rethinking` to go with the book. 
