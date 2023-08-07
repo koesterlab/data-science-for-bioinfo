@@ -15,7 +15,7 @@ It allows you to use any ENA/SRA accession number, for a `Study`, a `Sample`, an
 
 Installation of fastqsplitter via conda:
 ```
-mamba create -n fastqsplitter -c bioconda
+mamba create -n fastqsplitter -c bioconda fastqsplitter
 ```
 Usage of fastqsplitter:
 ```
