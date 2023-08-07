@@ -12,6 +12,7 @@ It allows you to use any ENA/SRA accession number, for a `Study`, a `Sample`, an
 ### fastqsplitter
 
 [Fastqsplitter](https://github.com/LUMC/fastqsplitter) is a tool that allows you to split FASTQ files into a desired number of output files _evenly_.
+
 Installation of fastqsplitter via conda:
 ```
 mamba create -n fastqsplitter -c bioconda
