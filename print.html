@@ -474,6 +474,16 @@ It's a community effort, so feel free <a href="https://github.com/bioconvert/bio
 <h3 id="fastq-dl"><a class="header" href="#fastq-dl">fastq-dl</a></h3>
 <p><a href="https://github.com/rpetit3/fastq-dl">fastq-dl</a> lets you download FASTQ data from the European Nucleotide Archive or the Sequence Read Archive repositories.
 It allows you to use any ENA/SRA accession number, for a <code>Study</code>, a <code>Sample</code>, an <code>Experiment</code>, or a <code>Run</code>.</p>
+<h2 id="splitting-fastq-data"><a class="header" href="#splitting-fastq-data">Splitting FASTQ data</a></h2>
+<h3 id="fastqsplitter"><a class="header" href="#fastqsplitter">fastqsplitter</a></h3>
+<p><a href="https://github.com/LUMC/fastqsplitter">Fastqsplitter</a> is a tool that allows you to split FASTQ files into a desired number of output files <em>evenly</em>.</p>
+<p>Installation of fastqsplitter via conda:</p>
+<pre><code>mamba create -n fastqsplitter -c bioconda fastqsplitter
+</code></pre>
+<p>Usage of fastqsplitter:</p>
+<pre><code>fastqsplitter -i input.fastq.gz -o output_1.fastq.gz -o output_2.fastq.gz -o output_3.fastq.gz
+</code></pre>
+<p>In the example above, fastqsplitter divides the input fastq into 3 evenly distributed fastq files through inferring this number from the outputs that are specified by the user.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/data_formats/fastq.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="comma-separated-or-tab-separated-value-files-csvtsv"><a class="header" href="#comma-separated-or-tab-separated-value-files-csvtsv">comma-separated or tab-separated value files (CSV/TSV)</a></h1>
 <h2 id="tools"><a class="header" href="#tools">tools</a></h2>
 <p>These can also often be handled with <a href="data_formats/../command_line/linux_tools.html">standard linux command line tools</a>.
