@@ -512,12 +512,18 @@ But unlike most serialization languages, the YAML format tries hard to make simp
 </blockquote>
 <p>This is how the <a href="https://yaml.com/">YAML data project</a> puts it, and it's spot on.
 Thus, for anything where we need configuration files that should be readable by both humans and machines, we use the YAML language.</p>
-<h2 id="yaml-resources"><a class="header" href="#yaml-resources">YAML resources</a></h2>
+<h2 id="learning-yaml"><a class="header" href="#learning-yaml">learning YAML</a></h2>
 <ul>
 <li><a href="https://www.yaml.info/learn/index.html">15 minute YAML tutorial for the most important aspects</a></li>
 <li><a href="https://www.yaml.info/learn/bestpractices.html">best practices</a></li>
-<li><a href="https://yaml.org/spec/1.2/">ALL the gory details in the official specification</a></li>
 </ul>
+<h2 id="debugging-yaml"><a class="header" href="#debugging-yaml">debugging YAML</a></h2>
+<p>For a very strict <code>yaml</code> linter, check out <a href="https://yamllint.readthedocs.io/en/stable/"><code>yamllint</code></a>.
+It is available via the <code>conda-forge</code> channel, so you can install it into its own <code>yamllint</code> conda/mamba evnironment with:</p>
+<pre><code>mamba create -n yamllint yamllint
+</code></pre>
+<h2 id="yaml-specification"><a class="header" href="#yaml-specification">YAML specification</a></h2>
+<p><a href="https://yaml.org/spec/1.2/">ALL the gory details in the official specification</a>.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/data_formats/yaml.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="data-visualization"><a class="header" href="#data-visualization">Data visualization</a></h1>
 <p>If you are interested in a conceptual framework for data visualizations, read up on the <a href="data_presentation/grammar_of_graphics.html">grammar of graphics</a>.
 Otherwise, jump right into one of the topics covered here.</p>
