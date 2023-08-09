@@ -15,7 +15,7 @@ Thus, for anything where we need configuration files that should be readable by 
 ## debugging YAML
 
 For a very strict `yaml` linter, check out [`yamllint`](https://yamllint.readthedocs.io/en/stable/).
-It is [available via conda-forge](https://anaconda.org/conda-forge/yamllint), so you can install it into its own `yamllint` conda/mamba evnironment with:
+It is available via the `conda-forge` channel, so you can install it into its own `yamllint` conda/mamba evnironment with:
 ```
 mamba create -n yamllint yamllint
 ```
