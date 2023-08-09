@@ -7,8 +7,19 @@
 This is how the [YAML data project](https://yaml.com/) puts it, and it's spot on.
 Thus, for anything where we need configuration files that should be readable by both humans and machines, we use the YAML language.
 
-## YAML resources
+## learning YAML
 
 * [15 minute YAML tutorial for the most important aspects](https://www.yaml.info/learn/index.html)
 * [best practices](https://www.yaml.info/learn/bestpractices.html)
-* [ALL the gory details in the official specification](https://yaml.org/spec/1.2/)
+
+## debugging YAML
+
+For a very strict `yaml` linter, check out [`yamllint`](https://yamllint.readthedocs.io/en/stable/).
+It is available via the `conda-forge` channel, so you can install it into its own `yamllint` conda/mamba evnironment with:
+```
+mamba create -n yamllint yamllint
+```
+
+## YAML specification
+
+[ALL the gory details in the official specification](https://yaml.org/spec/1.2/).
