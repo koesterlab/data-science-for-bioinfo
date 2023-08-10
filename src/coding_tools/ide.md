@@ -11,7 +11,7 @@ Several people in our group currently use it, with the possibility to [work on a
 
 ### recommended VS Code plugins
 
-VS Code has a very lively [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace) that [provides lots of useful plugins](https://marketplace.visualstudio.com/).
+VS Code has a very lively [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace) that provides lots of useful plugins.
 Here are some that have proven very useful to us:
 
 * The [`remote ssh`](https://code.visualstudio.com/docs/remote/ssh) extension enables you to log onto a server via an [`ssh` connection](../servers/ssh.md). You can then open a project folder and browse and edit files, while you can also open a Terminal / shell to run commands.
