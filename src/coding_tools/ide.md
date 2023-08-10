@@ -11,12 +11,12 @@ Several people in our group currently use it, with the possibility to [work on a
 
 ### recommended VS Code plugins
 
-VS Code has a very lively [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace) that [provides lots of useful plugins](https://marketplace.visualstudio.com/VSCode).
+VS Code has a very lively [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace) that [provides lots of useful plugins](https://marketplace.visualstudio.com/).
 Here are some that have proven very useful to us:
 
 * The [`remote ssh`](https://code.visualstudio.com/docs/remote/ssh) extension enables you to log onto a server via an [`ssh` connection](../servers/ssh.md). You can then open a project folder and browse and edit files, while you can also open a Terminal / shell to run commands.
-* The [`snakemake`](https://marketplace.visualstudio.com/items?itemName=Snakemake.snakemake-lang) extension gives you syntax highlighting for `Snakefile`s.
-* The [`Rainbow CSV`](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv) extension gives you systematic per-column colors in comma-separated and tab-separated value files.
+* The [`snakemake`](https://github.com/snakemake/snakemake-lang-vscode-plugin#snakemake-language-support) extension gives you syntax highlighting for `Snakefile`s.
+* The [`Rainbow CSV`](https://github.com/mechatroner/vscode_rainbow_csv#rainbow-csv) extension gives you systematic per-column colors in comma-separated and tab-separated value files.
 
 In addition, VS Code will often offer you to install plugins for filetypes you open, or for languages that you use.
 Explore.
