@@ -20,10 +20,12 @@ You can work through it at your own pace and all it requires is some basic R kno
 
 Once you are familiar with the data type and the analysis, there's a [standardized snakemake workflow for microarray analysis](https://snakemake.github.io/snakemake-workflow-catalog/?usage=zifornd/arrays) by James Ashmore.
 While we haven't used this workflow ourselves (but might in the future, we'll try to update the info here if we do), this workflow is:
-* is standardized, so:
+* standardized, so:
   * the above link should take you through all of the setup steps you will need to run this workflow on your own data
   * it is well-structured, so modifying it to your needs should be relatively easy
-* based on a thoroughly peer reviewed walk-through manuscript on microarray analysis: https://doi.org/10.12688/f1000research.8967.2
+* based on a [thoroughly peer reviewed walk-through manuscript on microarray analysis](https://doi.org/10.12688/f1000research.8967.2)
+
+This manuscript also gives good and detailed recommendations for microarray analysis in general, so you can also consult it if you are just looking for help on some certain analysis steps.
 
 ### RNA-seq data
 
