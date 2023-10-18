@@ -19,7 +19,7 @@ A good recap of available research and recommendations is given in the [section 
 
 You should **always include biological replicates** in any RNAseq analysis.
 Differential expression analysis tools will either not work at all without biological or the result will not be very useful.
-As Michael Love, the developer of DESeq2 stated, without biological replicates ["you have no idea [of] the degree of within-group variability, so you can't perform statistical inference (determining if the difference you see is more than you would typically see among replicates within one condition)"](https://support.bioconductor.org/p/95714/#95717).
+As [Michael Love, the developer of DESeq2 stated]((https://support.bioconductor.org/p/95714/#95717)), without biological replicates "you have no idea `[of]` the degree of within-group variability, so you can't perform statistical inference (determining if the difference you see is more than you would typically see among replicates within one condition)".
 
 How many biological replicates to include, depends on how sensitive your analysis needs to be and how heterogeneous you expect your replicates to be within sample groups.
 Anything below 3 samples is generally discouraged, as [a dedicated study on biological replicate numbers that had low within-group variability/heterogeneity](https://doi.org/10.1261%2Frna.053959.115) could only detect about 85% of expected differentially expressed genes with a fold change of 2 or higher.
