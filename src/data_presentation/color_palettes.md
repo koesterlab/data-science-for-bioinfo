@@ -10,6 +10,7 @@ If you just want a color blind color scale, here are some great resources:
 
 * [Okabe Ito colorblind safe palette](https://jfly.uni-koeln.de/color/#pallet):
   In addition to the linked palette, the website also gives good recommendations for colorblind proofing figures.
+* [Paul Tol's selection of color-blind sage palettes](https://personal.sron.nl/~pault/)
 * [Color Brewer 2](https://colorbrewer2.org):
   With this interactive color palette chooser, you can select sequential, diverging and qualitative colo scales.
   It has a checkbox to restrict results to colorblind safe palettes.
