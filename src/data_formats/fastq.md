@@ -1,5 +1,10 @@
 # sequencing data (fastq)
 
+## general purpose (swiss army knife) tools
+
+[seqkit](https://bioinf.shenwei.me/seqkit/) has a lot of subcommands for most of the operations you might ever want to do on `fastq` or `fasta` files.
+It [is really quick](http://bioinf.shenwei.me/seqkit/usage/#technical-details-and-guides-for-use) and [well-documented](https://bioinf.shenwei.me/seqkit/usage/).
+
 ## tools for downloading from repositories
 
 ### fastq-dl
