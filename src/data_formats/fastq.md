@@ -1,5 +1,8 @@
 # sequencing data (fastq)
 
+These are tools for maniupalting `fasta` and `fastq` files.
+For tools that can programmatically download `fasta` and fastq` files from repositories, see the section on [data download](../data_downloads/README.md).
+
 ## general purpose (swiss army knife) tools
 
 [seqkit](https://bioinf.shenwei.me/seqkit/) has a lot of subcommands for most of the operations you might ever want to do on `fastq` or `fasta` files.
