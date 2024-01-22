@@ -1,9 +1,17 @@
-# ncbi-datasets: gathering data across NCBI databases
+# tools for downloading from SRA, ENA, NCBI and Ensembl
+
+## fastq-dl
+
+[fastq-dl](https://github.com/rpetit3/fastq-dl) lets you download FASTQ data from the European Nucleotide Archive or the Sequence Read Archive repositories.
+It allows you to use any ENA/SRA accession number, for a `Study`, a `Sample`, an `Experiment`, or a `Run`.
+
+
+## ncbi-datasets: gathering data across NCBI databases
 
 [ncbi-datasets](https://github.com/ncbi/datasets) is a very-well documented open source tool from NCBI (National Center for Biotechnology Information) for gathering various kinds of data including genes, genomes, annotations etc. belonging to the desired species.
 As a side note, it has specific options for retrieving SARS-CoV-2 data.
 
-## Installation
+### Installation
 
 It is offered as a conda package and can be installed via:
 
@@ -11,7 +19,7 @@ It is offered as a conda package and can be installed via:
 conda create -n ncbi-download -c conda-forge ncbi-datasets-cli
 ```
 
-## Example usage
+### Example usage
 
 Retrieval of human reference genome:
 ```
