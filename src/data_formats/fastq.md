@@ -1,16 +1,12 @@
 # sequencing data (fastq)
 
+These are tools for maniupalting `fasta` and `fastq` files.
+For tools that can programmatically download `fasta` and fastq` files from repositories, see the section on [data download](../data_downloads/README.md).
+
 ## general purpose (swiss army knife) tools
 
 [seqkit](https://bioinf.shenwei.me/seqkit/) has a lot of subcommands for most of the operations you might ever want to do on `fastq` or `fasta` files.
 It [is really quick](http://bioinf.shenwei.me/seqkit/usage/#technical-details-and-guides-for-use) and [well-documented](https://bioinf.shenwei.me/seqkit/usage/).
-
-## tools for downloading from repositories
-
-### fastq-dl
-
-[fastq-dl](https://github.com/rpetit3/fastq-dl) lets you download FASTQ data from the European Nucleotide Archive or the Sequence Read Archive repositories.
-It allows you to use any ENA/SRA accession number, for a `Study`, a `Sample`, an `Experiment`, or a `Run`.
 
 ## Splitting FASTQ data
 
