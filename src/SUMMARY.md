@@ -24,7 +24,7 @@
   - [differential expression analysis](data_analyses/differential_expression.md)
 
 - [Data downloads / reanalysis](data_downloads/README.md)
-  - [ncbi_datasets](data_downloads/ncbi_datasets_cli.md)
+  - [SRA, ENA, NCBI, Ensembl](data_downloads/sra_ena_ncbi_ensemble.md)
   - [TCGA, TARGET, GTEx](data_downloads/tcga_target_datasets.md)
 
 - [Data formats and tools](data_formats/README.md)
