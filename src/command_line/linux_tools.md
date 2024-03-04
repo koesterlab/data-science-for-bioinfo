@@ -44,7 +44,7 @@ For example, you can easily search and replace patterns using regular expression
 It provides you with direct accessors to individual columns (for example `$1` for the first column) and with lots of functionality to work with them.
 
 * [awk tutorial for getting started](https://www.grymoire.com/Unix/Awk.html)
-* [comprehensive awk reference](https://www.math.utah.edu/docs/info/gawk_toc.html)
+* [comprehensive awk reference](https://www.math.utah.edu/docs/info/gawk_1.html)
 
 ## further resources
 
