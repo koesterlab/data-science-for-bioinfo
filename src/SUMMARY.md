@@ -16,7 +16,7 @@
   - [version control](coding_tools/version_control.md)
 
 - [Command line](command_line/README.md)
-  - [bash](command_line/bash.md)
+  - [Unix shell / linux command line](command_line/bash.md)
   - [conda (software installation)](command_line/conda.md)
   - [linux tools](command_line/linux_tools.md)
 

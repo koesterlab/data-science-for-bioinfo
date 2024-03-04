@@ -1,4 +1,4 @@
-# bash
+# Unix shell / linux command line / bash
 
 `bash` is the most common Linux shell, a command-line environment where you can enter and thus run commands interactively.
 You can find extensive resources about it online, and oftentimes searching for your particular problem online will provide suggestions for solutions.

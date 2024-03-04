@@ -9,7 +9,7 @@ jobs:
   build_with_checks_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Read versions.env
         id: versions
@@ -20,7 +20,7 @@ jobs:
           echo "opengh_version=$OPENGH_VERSION" >>$GITHUB_OUTPUT
 
       - name: Setup mdbook
-        uses: jontze/action-mdbook@v1
+        uses: jontze/action-mdbook@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # Optional Plugins have to be enabled with a version
