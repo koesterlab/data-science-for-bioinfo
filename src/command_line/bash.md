@@ -10,6 +10,9 @@ Here are two **quick-and-easy introductions** that focus on the most important a
 Here is a very well curated and more **thorough introduction to the command line** with a motivating example running through the course:
 * [Software Carpentry introduction to the Unix shell](https://swcarpentry.github.io/shell-novice/)
 
+And some additional material, for those who want to dive in deeper or skip ahead:
+* [Software Carpentry introductions to some Unix shell extras](https://carpentries-incubator.github.io/shell-extras/), for example including working remotely (`ssh`), variables, and `awk`
+
 And here are some more detailed resources:
 
 * [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html): Step-by-step introduction to some of the most important features.
