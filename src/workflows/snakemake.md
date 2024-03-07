@@ -52,7 +52,8 @@ You can save the entire current state of a workspace in `R`, so you can insert t
 save.image(file = "my_dump.RData")
 ```
 
-In an interactive R session, you can then load this workspace and interactively explore / debug what’s going on:
+In an interactive R session, first load all the `library()`s that you need for the script.
+Then you can load the full workspace and interactively explore / debug what’s going on:
 
 ```r
 load("my_dump.RData")
