@@ -806,7 +806,8 @@ sink(log, type="message")
 <p>You can save the entire current state of a workspace in <code>R</code>, so you can insert this right before some code triggers an error:</p>
 <pre><code class="language-r">save.image(file = "my_dump.RData")
 </code></pre>
-<p>In an interactive R session, you can then load this workspace and interactively explore / debug what’s going on:</p>
+<p>In an interactive R session, first load all the <code>library()</code>s that you need for the script.
+Then you can load the full workspace and interactively explore / debug what’s going on:</p>
 <pre><code class="language-r">load("my_dump.RData")
 </code></pre>
 <h4 id="python-1"><a class="header" href="#python-1">python</a></h4>
