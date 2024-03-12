@@ -52,3 +52,4 @@
 - [Working on servers](servers/README.md)
   - [persistent shell sessions (screen, tmux)](servers/persistent_shell.md)
   - [ssh login](servers/ssh.md)
+  - [data transfer](servers/data_transfer.md)
