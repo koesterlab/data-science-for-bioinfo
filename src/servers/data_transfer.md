@@ -2,9 +2,11 @@
 
 ## FTP with Filezilla
 
-Filezilla gives you a nice graphical user interface for data transfer, if you have an (S)FTP server interface available.
+Filezilla gives you a nice **graphical user interface** for data transfer, **if you have an (S)FTP server interface available**.
 You connect very easily and have a sane way of transferring data with a tree- and folder-view for both source and destination.
 And you can monitor the transfer while it is happening, and flexibly configure an overwrite policy if necessary.
+One import advante is that you **can install and use Filezilla on any operating system**.
+
 In general, any transfer should usually work with the following steps:
 
 1. Install Filezilla: [https://filezilla-project.org/](https://filezilla-project.org/)
@@ -19,10 +21,13 @@ In general, any transfer should usually work with the following steps:
 
 ## rsync (via ssh)
 
-If you have a Unix shell / linux command line available on the machine that you are trying to transfer data to or from, this is usually the easiest and most robust way of transferring data.
+If you have a **Unix shell / linux command line available on both the machines that you are trying to transfer data to and from**, this is usually the easiest and most robust way of transferring data.
 You can quickly transfer full folders recursively, with rsync optimizing the transfer speed and keeping things like modification timestamps intact.
+It is always recommended to run transfer commands in a [persistent shell session](./persistent_shell.md), because your transfer will always keep on running, even when your connection is interrupted or your terminal is closed unexpectly. 
 
-A command that will take the folder at `/abs/src/path/folder` and transfer it to `/abs/dest/path/folder` is (assuming, you are on the `source` machine):
+And here are standard `rsync` commands you can use:
+
+One to take the folder at `/abs/src/path/folder` and transfer it to `/abs/dest/path/folder` is (assuming, you are on the `src` machine):
 
 ```
 rsync -avP /abs/src/path/folder <user>@<dest_server_address>:/abs/dest/path/folder
