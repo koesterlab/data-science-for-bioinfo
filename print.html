@@ -880,10 +880,11 @@ There's a <a href="https://www.ssh.com/academy/ssh/copy-id">great guide for gene
 No need to remember any of this by heart, just look it up when you need it.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/servers/ssh.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="data-transfer-onto-and-from-linux-servers"><a class="header" href="#data-transfer-onto-and-from-linux-servers">data transfer onto and from linux servers</a></h1>
 <h2 id="ftp-with-filezilla"><a class="header" href="#ftp-with-filezilla">FTP with Filezilla</a></h2>
-<p>Filezilla gives you a nice graphical user interface for data transfer, if you have an (S)FTP server interface available.
+<p>Filezilla gives you a nice <strong>graphical user interface</strong> for data transfer, <strong>if you have an (S)FTP server interface available</strong>.
 You connect very easily and have a sane way of transferring data with a tree- and folder-view for both source and destination.
 And you can monitor the transfer while it is happening, and flexibly configure an overwrite policy if necessary.
-In general, any transfer should usually work with the following steps:</p>
+One import advante is that you <strong>can install and use Filezilla on any operating system</strong>.</p>
+<p>In general, any transfer should usually work with the following steps:</p>
 <ol>
 <li>Install Filezilla: <a href="https://filezilla-project.org/">https://filezilla-project.org/</a></li>
 <li>Connect to the server via <code>Quickconnect</code> in the top bar:</li>
@@ -900,9 +901,11 @@ In general, any transfer should usually work with the following steps:</p>
 <li>Right-click and select Upload.</li>
 </ol>
 <h2 id="rsync-via-ssh"><a class="header" href="#rsync-via-ssh">rsync (via ssh)</a></h2>
-<p>If you have a Unix shell / linux command line available on the machine that you are trying to transfer data to or from, this is usually the easiest and most robust way of transferring data.
-You can quickly transfer full folders recursively, with rsync optimizing the transfer speed and keeping things like modification timestamps intact.</p>
-<p>A command that will take the folder at <code>/abs/src/path/folder</code> and transfer it to <code>/abs/dest/path/folder</code> is (assuming, you are on the <code>source</code> machine):</p>
+<p>If you have a <strong>Unix shell / linux command line available on both the machines that you are trying to transfer data to and from</strong>, this is usually the easiest and most robust way of transferring data.
+You can quickly transfer full folders recursively, with rsync optimizing the transfer speed and keeping things like modification timestamps intact.
+It is always recommended to run transfer commands in a <a href="servers/./persistent_shell.html">persistent shell session</a>, because your transfer will always keep on running, even when your connection is interrupted or your terminal is closed unexpectly.</p>
+<p>And here are standard <code>rsync</code> commands you can use:</p>
+<p>One to take the folder at <code>/abs/src/path/folder</code> and transfer it to <code>/abs/dest/path/folder</code> is (assuming, you are on the <code>src</code> machine):</p>
 <pre><code>rsync -avP /abs/src/path/folder &lt;user&gt;@&lt;dest_server_address&gt;:/abs/dest/path/folder
 </code></pre>
 <p>The command line options used here are:</p>
