@@ -19,9 +19,9 @@ And the most important command line arguments and keystrokes can be found in thi
  
 And if you are looking for a more detailed intro, check out the [**Getting Started** section of `screen`'s online documentation](https://www.gnu.org/software/screen/manual/screen.html#Getting-Started).
 
-## TMUX
+## tmux
 
-[Tmux](https://github.com/tmux/tmux/wiki) stands for 'terminal multiplexer'.
+[`tmux`](https://github.com/tmux/tmux/wiki) stands for 'terminal multiplexer'.
 It is also meant for running commands and workflows in persistent terminal sessions that you can log out of.
 
 ### Essential instructions
