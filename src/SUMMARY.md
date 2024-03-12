@@ -50,6 +50,6 @@
   - [Snakemake](workflows/snakemake.md)
 
 - [Working on servers](servers/README.md)
-  - [screen: persistent shell sessions](servers/screen.md)
+  - [persistent shell sessions (screen, tmux)](servers/persistent_shell.md)
   - [ssh login](servers/ssh.md)
-  - [tmux](servers/tmux.md)
+  - [data transfer](servers/data_transfer.md)
