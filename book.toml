@@ -23,7 +23,7 @@ open-on-text = "Want to add or correct something? [Edit this page on GitHub.]"
 follow-web-links = true
 
 # The User-Agent to use when sending web requests
-user-agent = "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0"
+user-agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.3"
 
 # How should warnings be treated?
 #
