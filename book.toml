@@ -22,6 +22,9 @@ open-on-text = "Want to add or correct something? [Edit this page on GitHub.]"
 # non-negligible performance impact
 follow-web-links = true
 
+# The User-Agent to use when sending web requests
+user-agent = "mdbook-linkcheck"
+
 # How should warnings be treated?
 #
 # - "warn" will emit warning messages
