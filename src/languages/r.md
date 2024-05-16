@@ -97,9 +97,16 @@ If you are using Ubuntu as your operating system and want to install R (and R pa
 
 Provides full language support for R in VS Code, including code completion, formatting, syntax highlighting, plot and data views, etc. This should make VS Code configurable in the same way that RStudio works.
 
-## error handling
+## debugging / error handling
 
-A [recommendation in the `tidyverse` style guide](https://style.tidyverse.org/error-messages.html#error-messages) points to [`cli` package](https://cli.r-lib.org/index.html) that provides [nice functionality for useful error messages via `cli_abort`](https://cli.r-lib.org/reference/cli_abort.html).
+For debugging, you want to have error messages that are as informative as possible.
+There are two types of situations where you can improve the quality of the error messages you (and others) get:
+
+1. Someone else's code is throwing an error and you want a clear backtrace of the error.
+   Here, you can use the **tidyverse's **[**`rlang::global_entrace()` function**](https://rlang.r-lib.org/reference/global_entrace.html) function to turn any uncaught error into an error with a proper backtrace.
+   You can do this either in a particular script (probably at the top), or in your [global `.Rprofile` file](https://support.posit.co/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf).
+3. You are writing your own code and can create more informative error messages (so users might not even have to read through the backtrace to identify their problem!).
+   Here, the [recommendation in the `tidyverse` style guide](https://style.tidyverse.org/error-messages.html#error-messages) points to the [`cli` package](https://cli.r-lib.org/index.html) that provides [nice functionality for useful error messages via `cli_abort`](https://cli.r-lib.org/reference/cli_abort.html).
 
 
 
