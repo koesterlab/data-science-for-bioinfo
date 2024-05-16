@@ -48,3 +48,14 @@ exclude = [
     # the respective link(s) work in the browser, but linkcheck return: 
     'https://www\.math\.utah\.edu/.*'
     ]
+
+# Extra HTTP headers that must be send to certain web sites
+# in order to link check to succeed.
+#
+# This is a dictionary (map), with keys being regexes
+# matching a set of web sites, and values being an array of
+# the headers.
+[output.linkcheck.http-headers]
+# Any hyperlink that contains this regexp will be sent
+# the "Accept: text/html" header
+'posit\.co' = ["Accept: text/html"]
