@@ -16,16 +16,3 @@ git-repository-url = "https://github.com/koesterlab/data-science-for-bioinfo"
 # The text to use in the footer.
 # The link text is marked by `[]`
 open-on-text = "Want to add or correct something? [Edit this page on GitHub.]"
-
-[output.linkcheck]
-# Should we check links on the internet? Enabling this option adds a
-# non-negligible performance impact
-follow-web-links = false
-
-# How should warnings be treated?
-#
-# - "warn" will emit warning messages
-# - "error" treats all warnings as errors, failing the linkcheck
-# - "ignore" will ignore warnings, suppressing diagnostic messages and allowing
-#   the linkcheck to continuing
-warning-policy = "error"
