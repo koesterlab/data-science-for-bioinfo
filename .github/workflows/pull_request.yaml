@@ -6,17 +6,23 @@ on:
       - main
 
 jobs:
-  build_with_checks:
+  check_links_and_build_with_checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Run linkspector
+        uses: umbrelladocs/action-linkspector@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          fail_on_error: true
 
       - name: Read versions.env
         id: versions
         run: |
           . .github/workflows/versions.env
           echo "mdbook_version=$MDBOOK_VERSION" >>$GITHUB_OUTPUT
-          echo "linkcheck_version=$LINKCHECK_VERSION" >>$GITHUB_OUTPUT
           echo "opengh_version=$OPENGH_VERSION" >>$GITHUB_OUTPUT
 
       - name: Setup mdbook
@@ -25,8 +31,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # Optional Plugins have to be enabled with a version
           mdbook-version: "~${{ steps.versions.outputs.mdbook_version }}" # Use a semver compatible string
-          use-linkcheck: true
-          linkcheck-version: "~${{ steps.versions.outputs.linkcheck_version }}"
           use-opengh: true
           opengh-version: "~${{ steps.versions.outputs.opengh_version }}"
       - name: Build mdbook (with checks)
