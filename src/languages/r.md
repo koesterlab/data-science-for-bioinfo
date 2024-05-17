@@ -19,15 +19,13 @@ You can work through it self-paced.
 
 ## interactive learning via `swirl` 
 Interactive learning within R command line. From beginner to advanced. User friendly.
-[swirl](https://swirlstat.com/)
+[swirl](https://swirlstats.com/)
 
 ## R4DS: R for Data Science
 
 If you have programmed before and want to learn how to use R for data analysis, the free online book [R for Data Science](https://r4ds.hadley.nz/) is all you need.
 It introduces both concepts and tools in a very accessible way, including example code and coding excercises.
-It is based on the [tidyverse](#idyverse) packages.
-
-[random added broken link](../data_formats/csv.md).
+It is based on the [tidyverse](#tidyverse) packages.
 
 ## tidyverse
 
