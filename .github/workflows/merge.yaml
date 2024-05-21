@@ -30,9 +30,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # Optional Plugins have to be enabled with a version
-          mdbook-version: "~${{ steps.versions.outputs.mdbook_version }}" # Use a semver compatible string
+          mdbook-version: "${{ steps.versions.outputs.mdbook_version }}" # Use a semver compatible string
           use-opengh: true
-          opengh-version: "~${{ steps.versions.outputs.opengh_version }}"
+          opengh-version: "${{ steps.versions.outputs.opengh_version }}"
       - name: Build mdbook (with checks)
         run: mdbook build
 
