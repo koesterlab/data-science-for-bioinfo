@@ -204,6 +204,12 @@ And if the tool or command you are looking for is not yet on there, consider <a 
 sink(log)
 sink(log, type="message")
 </code></pre>
+<p>Also, if you are looking to have proper backtraces even for unexpected errors (errors not properly handled in your code or in a package you load), you can use:</p>
+<pre><code class="language-r">rlang::global_entrace()
+</code></pre>
+<p>You will need to have the package <code>rlang</code> installed, but this for example comes with the <code>tidyverse</code>.
+For infos on the function, see the documentation: <a href="https://rlang.r-lib.org/reference/global_entrace.html">https://rlang.r-lib.org/reference/global_entrace.html</a>
+Also, this is <a href="https://github.com/r-lib/rlang/issues/1717#issuecomment-2163180629">not epxected to incur a performance reduction</a>.</p>
 <h5 id="interactive-debugging"><a class="header" href="#interactive-debugging">interactive debugging</a></h5>
 <p>You can save the entire current state of a workspace in <code>R</code>, so you can insert this right before some code triggers an error:</p>
 <pre><code class="language-r">save.image(file = "my_dump.RData")
