@@ -43,6 +43,13 @@ log <- file(snakemake@log[[1]], open="wt")
 sink(log)
 sink(log, type="message")
 ```
+Also, if you are looking to have proper backtraces even for unexpected errors (errors not properly handled in your code or in a package you load), you can use:
+```r
+rlang::global_entrace()
+```
+You will need to have the package `rlang` installed, but this for example comes with the `tidyverse`.
+For infos on the function, see the documentation: [https://rlang.r-lib.org/reference/global_entrace.html](https://rlang.r-lib.org/reference/global_entrace.html)
+Also, this is [not epxected to incur a performance reduction](https://github.com/r-lib/rlang/issues/1717#issuecomment-2163180629).
 
 ##### interactive debugging
 
