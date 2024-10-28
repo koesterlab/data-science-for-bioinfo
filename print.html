@@ -337,48 +337,46 @@ This script can just contain commands, and if it is saved as <code>path/to/some_
 <pre><code class="language-bash">path/to/another_script.bash
 </code></pre>
 <p>Your shell will know to use the <code>bash</code> from your main environment to execute this script.</p>
-<footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/command_line/bash.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="conda--mamba-software-installation"><a class="header" href="#conda--mamba-software-installation">conda / mamba (software installation)</a></h1>
+<footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/command_line/bash.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="conda-software-installation"><a class="header" href="#conda-software-installation">conda (software installation)</a></h1>
 <blockquote>
 <p>Conda is an open-source package management system and environment management system that runs on Windows, macOS, and Linux. Conda quickly installs, runs, and updates packages and their dependencies.</p>
 </blockquote>
 <p>This is how the <a href="https://docs.conda.io/projects/conda/en/latest/index.html"><code>conda</code> documentation</a> puts it.
-One more major selling-point: you don't need administrator rights to install conda itself or the to install packages with it.
+One more major selling-point: you don't need administrator rights to install conda itself or to install packages with it.
 And for our (bioinformatic) purposes, there are two more very useful aspects:</p>
 <ol>
 <li>There is <a href="command_line/../bioinformatics/bioconda.html"><code>bioconda</code></a>, a <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html"><code>conda</code> channel</a> with pretty much any tool in bioinformatics pre-packaged for you.</li>
 <li><code>conda</code> seemlessly <a href="https://snakemake.readthedocs.io/en/latest/snakefiles/deployment.html#integrated-package-management">integrates with <code>snakemake</code></a> for automatic software installation in automated analysis workflows.</li>
 </ol>
-<h2 id="installing-conda--mamba"><a class="header" href="#installing-conda--mamba">installing conda / mamba</a></h2>
-<p>We recommend using the <a href="https://github.com/conda-forge/miniforge#install">mambaforge installation</a>.
-<code>mamba</code> is a drop-in replacement command for most of <code>conda</code> (it can do exactly the same things), but it is much faster for solving package dependencies.
-This can mean a major speedup for creating and changing environments.
-Whenever a command does not actually work with <code>mamba</code>, you can simply use <code>conda</code> instead (it is also installed in the background and is used for any task that's not too slow).</p>
+<h2 id="installing-conda"><a class="header" href="#installing-conda">installing conda</a></h2>
+<p>We recommend using the <a href="https://github.com/conda-forge/miniforge#install">miniforge installation</a> and recommend a <code>conda</code> version <code>&gt;= 24.7.1</code>.
+The latter is the <a href="https://github.com/snakemake/snakemake/releases/tag/v8.20.6">minimum conda version that <code>snakemake</code> requires at the time of writing</a> (since <a href="https://docs.conda.io/projects/conda/en/latest/release-notes.html#id58"><code>conda &gt;= 23.10.0</code>, it uses the fast dependency solver previously only included in <code>mamba</code></a>).</p>
 <h2 id="creating-and-using-environments"><a class="header" href="#creating-and-using-environments">creating and using environments</a></h2>
 <p><code>conda</code> makes it easy to <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-environments">create and manage new (named) software environments</a>.
 We recommend to create a new (and minimal) software environment whenever possible (for example, in a snakemake workflow, each rule will have its own software environment).
 You will then only activate that software environment whenever you need the software installed into it.
 By keeping environments minimal, you avoid clashes in the dependencies that software might have (for example, if software X needs python version 3, while software Y still requires python version 2, these cannot be installed into the same environment---but X and Y will happily install in separate environments, which will pull in the required python version).</p>
 <p>But, long story short, here's the command to create an environment:</p>
-<pre><code class="language-bash">mamba create -n snakemake_env snakemake snakedeploy snakefmt
+<pre><code class="language-bash">conda create -n snakemake_env snakemake snakedeploy snakefmt
 </code></pre>
 <p>You can then activate that environment with:</p>
-<pre><code class="language-bash">mamba activate snakemake_env
+<pre><code class="language-bash">conda activate snakemake_env
 </code></pre>
 <p>And you will be able to call the installed tools, for example <code>snakemake</code>:</p>
 <pre><code class="language-bash">snakemake --version
 snakemake --help
 </code></pre>
 <p>If you are done with your current session of using the software, the following gets you back to your original environment (the one you were in before activating <code>snakemake_env</code>):</p>
-<pre><code class="language-bash">mamba deactivate
+<pre><code class="language-bash">conda deactivate
 </code></pre>
 <p>If you no longer need the entire environment (and the software contained in it) and want to delete it, you can:</p>
-<pre><code class="language-bash">mamba env remove -n snakemake_env
+<pre><code class="language-bash">conda env remove -n snakemake_env
 </code></pre>
 <p>And then, there are <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">many other things you can do with environments</a>---just look up the details whenever you need them.</p>
 <h2 id="installing-specific-versions-of-software"><a class="header" href="#installing-specific-versions-of-software">installing specific versions of software</a></h2>
 <p>Sometimes, you want to install a specific version of a software, for example because something was proven to work with that version in the past.
 You can achieve this with:</p>
-<pre><code class="language-bash">mamba create -n snakemake_env_7_19_1 snakemake=7.19.1
+<pre><code class="language-bash">conda create -n snakemake_env_7_19_1 snakemake=7.19.1
 </code></pre>
 <p>And in case you ever need to dive into the details, there is of course <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/pkg-specs.html#package-match-specifications">documentation on how <code>conda</code> handles version number specifications</a>.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/command_line/conda.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="linux-tools"><a class="header" href="#linux-tools">linux tools</a></h1>
