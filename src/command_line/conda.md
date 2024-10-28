@@ -1,20 +1,18 @@
-# conda / mamba (software installation)
+# conda (software installation)
 
 > Conda is an open-source package management system and environment management system that runs on Windows, macOS, and Linux. Conda quickly installs, runs, and updates packages and their dependencies.
 
 This is how the [`conda` documentation](https://docs.conda.io/projects/conda/en/latest/index.html) puts it.
-One more major selling-point: you don't need administrator rights to install conda itself or the to install packages with it.
+One more major selling-point: you don't need administrator rights to install conda itself or to install packages with it.
 And for our (bioinformatic) purposes, there are two more very useful aspects:
 
 1. There is [`bioconda`](../bioinformatics/bioconda.md), a [`conda` channel](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html) with pretty much any tool in bioinformatics pre-packaged for you.
 2. `conda` seemlessly [integrates with `snakemake`](https://snakemake.readthedocs.io/en/latest/snakefiles/deployment.html#integrated-package-management) for automatic software installation in automated analysis workflows.
 
-## installing conda / mamba
+## installing conda
 
-We recommend using the [mambaforge installation](https://github.com/conda-forge/miniforge#install).
-`mamba` is a drop-in replacement command for most of `conda` (it can do exactly the same things), but it is much faster for solving package dependencies.
-This can mean a major speedup for creating and changing environments.
-Whenever a command does not actually work with `mamba`, you can simply use `conda` instead (it is also installed in the background and is used for any task that's not too slow).
+We recommend using the [miniforge installation](https://github.com/conda-forge/miniforge#install) and recommend a `conda` version `>= 24.7.1`.
+The latter is the [minimum conda version that `snakemake` requires at the time of writing](https://github.com/snakemake/snakemake/releases/tag/v8.20.6) (since [`conda >= 23.10.0`, it uses the fast dependency solver previously only included in `mamba`](https://docs.conda.io/projects/conda/en/latest/release-notes.html#id58)).
 
 ## creating and using environments
 
@@ -26,13 +24,13 @@ By keeping environments minimal, you avoid clashes in the dependencies that soft
 But, long story short, here's the command to create an environment:
 
 ```bash
-mamba create -n snakemake_env snakemake snakedeploy snakefmt
+conda create -n snakemake_env snakemake snakedeploy snakefmt
 ```
 
 You can then activate that environment with:
 
 ```bash
-mamba activate snakemake_env
+conda activate snakemake_env
 ```
 
 And you will be able to call the installed tools, for example `snakemake`:
@@ -45,12 +43,12 @@ snakemake --help
 If you are done with your current session of using the software, the following gets you back to your original environment (the one you were in before activating `snakemake_env`):
 
 ```bash
-mamba deactivate
+conda deactivate
 ```
 
 If you no longer need the entire environment (and the software contained in it) and want to delete it, you can:
 ```bash
-mamba env remove -n snakemake_env
+conda env remove -n snakemake_env
 ```
 
 And then, there are [many other things you can do with environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)---just look up the details whenever you need them.
@@ -61,7 +59,7 @@ Sometimes, you want to install a specific version of a software, for example bec
 You can achieve this with:
 
 ```bash
-mamba create -n snakemake_env_7_19_1 snakemake=7.19.1
+conda create -n snakemake_env_7_19_1 snakemake=7.19.1
 ```
 
 And in case you ever need to dive into the details, there is of course [documentation on how `conda` handles version number specifications](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/pkg-specs.html#package-match-specifications).
