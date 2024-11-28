@@ -877,6 +877,7 @@ sys.stderr = open(snakemake.log[0], "w")
 <p>Inserting the following into a python script executed in a snakemake rule will throw you into an interactive python debugging shell where you have access to the current state, including <code>locals()</code> and <code>globals()</code> variables:</p>
 <pre><code class="language-python">import pdb; pdb.set_trace()
 </code></pre>
+<p>Please note that you must not redirect the standard output to any log file, which you might have done before for other debugging purpose. If you do so, the python debugger will still interrupt the pipeline execution but you will not see the debugging shell, and thus be unable to interact with the program state or resume the execution.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/workflows/snakemake.md">Edit this page on GitHub.</a></footer><div style="break-before: page; page-break-before: always;"></div><h1 id="working-on-servers"><a class="header" href="#working-on-servers">Working on servers</a></h1>
 <p>This section collects resources that are helpful for working on servers.
 For example <a href="servers/./ssh.html">how to log into servers via <code>ssh</code></a>, <a href="servers/./persistent_shell.html">how to create persistent shell sessions</a> so that you can leave things running when you have to log out, and <a href="servers/./data_transfer.html">how to get data onto and off of servers</a>.</p>

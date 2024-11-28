@@ -228,6 +228,7 @@ sys.stderr = open(snakemake.log[0], "w")
 <p>Inserting the following into a python script executed in a snakemake rule will throw you into an interactive python debugging shell where you have access to the current state, including <code>locals()</code> and <code>globals()</code> variables:</p>
 <pre><code class="language-python">import pdb; pdb.set_trace()
 </code></pre>
+<p>Please note that you must not redirect the standard output to any log file, which you might have done before for other debugging purpose. If you do so, the python debugger will still interrupt the pipeline execution but you will not see the debugging shell, and thus be unable to interact with the program state or resume the execution.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/workflows/snakemake.md">Edit this page on GitHub.</a></footer>
                     </main>
 
