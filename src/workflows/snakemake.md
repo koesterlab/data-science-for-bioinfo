@@ -84,3 +84,4 @@ Inserting the following into a python script executed in a snakemake rule will t
 ```python
 import pdb; pdb.set_trace()
 ```
+Please note that you must not redirect the standard output to any log file, which you might have done before for other debugging purpose. If you do so, the python debugger will still interrupt the pipeline execution but you will not see the debugging shell, and thus be unable to interact with the program state or resume the execution.
