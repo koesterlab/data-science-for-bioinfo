@@ -23,3 +23,8 @@ Usage of fastqsplitter:
 fastqsplitter -i input.fastq.gz -o output_1.fastq.gz -o output_2.fastq.gz -o output_3.fastq.gz
 ```
 In the example above, fastqsplitter divides the input fastq into 3 evenly distributed fastq files through inferring this number from the outputs that are specified by the user.
+
+
+## Filtering FASTQ data
+
+The [grepq](https://github.com/Rbfinch/grepq) tool enables filtering of FASTQ files via [regular expressions](https://en.wikipedia.org/wiki/Regular_expression).
