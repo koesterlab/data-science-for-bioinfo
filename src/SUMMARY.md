@@ -50,6 +50,7 @@
   - [frequentist statistics (hypothesis tests, p-values, etc.)](statistics/frequentist.md)
 
 - [Workflow management](workflows/README.md)
+  - [Nextflow](workflows/nextflow.md)
   - [Snakemake](workflows/snakemake.md)
 
 - [Working on servers](servers/README.md)
