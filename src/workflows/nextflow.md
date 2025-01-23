@@ -16,3 +16,12 @@ nf-core can be installed for example via the package manager [conda](https://nf-
 ## debugging Nextflow workflows
 
 If you encounter any errors during the execution of your Nextflow pipeline, Nextflow has some nice [training material on troubleshooting](https://training.nextflow.io/basic_training/debugging/).
+
+Also, you can try setting some environment variables before running nextflow, either interactively or by defining them in your `~/.bashrc`, and by increasing the number specified, you can increase the amount of logging information that is provided:
+
+```bash
+export NXF_DEBUG=1
+export APPTAINERENV_NXF_DEBUG=1
+```
+
+You can find more information in the [documentation of `Nextflow` environment variables](https://www.nextflow.io/docs/latest/reference/env-vars.html#nextflow-settings).
