@@ -22,6 +22,7 @@
 
 - [Data analyses](data_analyses/README.md)
   - [differential expression analysis](data_analyses/differential_expression.md)
+  - [single cell analysis](data_analyses/single_cell_analysis.md)
 
 - [Data downloads / reanalysis](data_downloads/README.md)
   - [SRA, ENA, NCBI, Ensembl](data_downloads/sra_ena_ncbi_ensemble.md)
