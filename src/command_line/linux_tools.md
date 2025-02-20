@@ -15,21 +15,33 @@ Most command-line tools have certain standard command-line arguments, that usual
 * `--version`: display the version of the tool that you have installed
 * `--verbose`: provide more verbose output, oftentimes useful for debugging problems
 
-## `head` and `tail`
+## `awk`: line by line editing of tabular plain text files
 
-`head -n 5 myfile.txt` will display the first five lines of the plain text file `myfile.txt`.
-`tail -n 5 myfile.txt` will display the last five lines of the plain text file `myfile.txt`.
+`awk` is a great tool to work on plain-text tabular files (for example tab-separated or comma-separated files, `.tsv` and `.csv` files, respectively).
+It provides you with direct accessors to individual columns (for example `$1` for the first column) and with lots of functionality to work with them.
 
-## `less`: quick look at text files
+* [awk tutorial for getting started](https://www.grymoire.com/Unix/Awk.html)
+* [comprehensive awk reference](https://www.math.utah.edu/docs/info/gawk_toc.html)
 
-`less` is a tool for quickly looking at text files on the command line.
-Conjure it up with `less myfile.txt`, scroll up and down with the arrow and page up/down keys, search for something like `thisword` with `/thisword` (followed by enter) and quit by hitting `q`.
 
 ## `grep`: line by line plain text file searching
 
 `grep` allows you to search for strings and [regular expressions](../coding_tools/regular_expressions.md) in text files.
 It will return any line containing a search string.
 For example, `grep "gene" myfile.txt` would return any line containing the string `gene` in `myfile.txt`.
+
+
+## `head` and `tail`
+
+`head -n 5 myfile.txt` will display the first five lines of the plain text file `myfile.txt`.
+`tail -n 5 myfile.txt` will display the last five lines of the plain text file `myfile.txt`.
+
+
+## `less`: quick look at text files
+
+`less` is a tool for quickly looking at text files on the command line.
+Conjure it up with `less myfile.txt`, scroll up and down with the arrow and page up/down keys, search for something like `thisword` with `/thisword` (followed by enter) and quit by hitting `q`.
+
 
 ## `sed`: line by line plain text file editing
 
@@ -38,13 +50,6 @@ For example, you can easily search and replace patterns using regular expression
 
 * [sed tutorial for getting started](https://www.grymoire.com/Unix/sed.html)
 
-## `awk`: line by line editing of tabular plain text files
-
-`awk` is a great tool to work on plain-text tabular files (for example tab-separated or comma-separated files, `.tsv` and `.csv` files, respectively).
-It provides you with direct accessors to individual columns (for example `$1` for the first column) and with lots of functionality to work with them.
-
-* [awk tutorial for getting started](https://www.grymoire.com/Unix/Awk.html)
-* [comprehensive awk reference](https://www.math.utah.edu/docs/info/gawk_toc.html)
 
 ## further resources
 
