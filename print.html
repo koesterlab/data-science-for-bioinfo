@@ -393,28 +393,43 @@ You can scroll up and down and leave the manual with <code>q</code> to drop back
 <li><code>--version</code>: display the version of the tool that you have installed</li>
 <li><code>--verbose</code>: provide more verbose output, oftentimes useful for debugging problems</li>
 </ul>
-<h2 id="head-and-tail"><a class="header" href="#head-and-tail"><code>head</code> and <code>tail</code></a></h2>
-<p><code>head -n 5 myfile.txt</code> will display the first five lines of the plain text file <code>myfile.txt</code>.
-<code>tail -n 5 myfile.txt</code> will display the last five lines of the plain text file <code>myfile.txt</code>.</p>
-<h2 id="less-quick-look-at-text-files"><a class="header" href="#less-quick-look-at-text-files"><code>less</code>: quick look at text files</a></h2>
-<p><code>less</code> is a tool for quickly looking at text files on the command line.
-Conjure it up with <code>less myfile.txt</code>, scroll up and down with the arrow and page up/down keys, search for something like <code>thisword</code> with <code>/thisword</code> (followed by enter) and quit by hitting <code>q</code>.</p>
-<h2 id="grep-line-by-line-plain-text-file-searching"><a class="header" href="#grep-line-by-line-plain-text-file-searching"><code>grep</code>: line by line plain text file searching</a></h2>
-<p><code>grep</code> allows you to search for strings and <a href="command_line/../coding_tools/regular_expressions.html">regular expressions</a> in text files.
-It will return any line containing a search string.
-For example, <code>grep "gene" myfile.txt</code> would return any line containing the string <code>gene</code> in <code>myfile.txt</code>.</p>
-<h2 id="sed-line-by-line-plain-text-file-editing"><a class="header" href="#sed-line-by-line-plain-text-file-editing"><code>sed</code>: line by line plain text file editing</a></h2>
-<p><code>sed</code> is a great tool to work on plain-text files line by line.
-For example, you can easily search and replace patterns using regular expressions.</p>
-<ul>
-<li><a href="https://www.grymoire.com/Unix/sed.html">sed tutorial for getting started</a></li>
-</ul>
 <h2 id="awk-line-by-line-editing-of-tabular-plain-text-files"><a class="header" href="#awk-line-by-line-editing-of-tabular-plain-text-files"><code>awk</code>: line by line editing of tabular plain text files</a></h2>
 <p><code>awk</code> is a great tool to work on plain-text tabular files (for example tab-separated or comma-separated files, <code>.tsv</code> and <code>.csv</code> files, respectively).
 It provides you with direct accessors to individual columns (for example <code>$1</code> for the first column) and with lots of functionality to work with them.</p>
 <ul>
 <li><a href="https://www.grymoire.com/Unix/Awk.html">awk tutorial for getting started</a></li>
 <li><a href="https://www.math.utah.edu/docs/info/gawk_toc.html">comprehensive awk reference</a></li>
+</ul>
+<h2 id="grep-line-by-line-plain-text-file-searching"><a class="header" href="#grep-line-by-line-plain-text-file-searching"><code>grep</code>: line by line plain text file searching</a></h2>
+<p><code>grep</code> allows you to search for strings and <a href="command_line/../coding_tools/regular_expressions.html">regular expressions</a> in text files.
+It will return any line containing a search string.
+For example, <code>grep "gene" myfile.txt</code> would return any line containing the string <code>gene</code> in <code>myfile.txt</code>.</p>
+<h2 id="head-or-tail-first-or-last-lines-of-a-file"><a class="header" href="#head-or-tail-first-or-last-lines-of-a-file"><code>head</code> or <code>tail</code>: first or last lines of a file</a></h2>
+<p><code>head -n 5 myfile.txt</code> will display the first five lines of the plain text file <code>myfile.txt</code>.
+<code>tail -n 5 myfile.txt</code> will display the last five lines of the plain text file <code>myfile.txt</code>.</p>
+<h2 id="htop-interactive-processes-viewer"><a class="header" href="#htop-interactive-processes-viewer"><code>htop</code>: interactive processes viewer</a></h2>
+<p><a href="https://htop.dev/"><code>htop</code></a> is an interactive process viewer that allows you to look at the resource usage of individual processes and across an entire computer in the terminal.
+This can be useful both locally, or when working remotely server.</p>
+<h3 id="htop-on-machines-with-lots-of-cpus"><a class="header" href="#htop-on-machines-with-lots-of-cpus"><code>htop</code> on machines with lots of CPUs</a></h3>
+<p>Sometimes, servers have so many CPUs that the default display of <code>htop</code> that shows a CPU meter for every CPU will take up the entire screen, so that you cannot see the processes table at all.
+If your <a href="https://superuser.com/a/1856568/226255"><code>htop --version</code> is <code>&gt;=3.2.2</code>, you can simply hit the <code>#</code> hotkey to toggle all of the meters at the top on and off</a>.
+You can easily install the latest <code>htop</code> with <a href="command_line/conda.html"><code>conda</code></a> if you have the <code>conda-forge</code> channel enabled, for example with: <code>conda create -n htop htop</code>.</p>
+<p>If you do want to keep the meters, but want to collapse all the CPU meters into one average CPU meter, you can consider <a href="https://superuser.com/a/806684/226255">editing your <code>~/.config/htop/htoprc</code> configuration</a>.
+Just open it with your editor of choice and make sure that you remove any reference to <code>LeftCPUs</code> and <code>RightCPUs</code> and replace it with <code>CPU</code>.
+The four lines regarding the meters could for example look like this:</p>
+<pre><code>left_meters=CPU Memory Swap
+left_meter_modes=1 1 1
+right_meters=Tasks LoadAverage Uptime
+right_meter_modes=2 2 2
+</code></pre>
+<h2 id="less-quick-look-at-text-files"><a class="header" href="#less-quick-look-at-text-files"><code>less</code>: quick look at text files</a></h2>
+<p><code>less</code> is a tool for quickly looking at text files on the command line.
+Conjure it up with <code>less myfile.txt</code>, scroll up and down with the arrow and page up/down keys, search for something like <code>thisword</code> with <code>/thisword</code> (followed by enter) and quit by hitting <code>q</code>.</p>
+<h2 id="sed-line-by-line-plain-text-file-editing"><a class="header" href="#sed-line-by-line-plain-text-file-editing"><code>sed</code>: line by line plain text file editing</a></h2>
+<p><code>sed</code> is a great tool to work on plain-text files line by line.
+For example, you can easily search and replace patterns using regular expressions.</p>
+<ul>
+<li><a href="https://www.grymoire.com/Unix/sed.html">sed tutorial for getting started</a></li>
 </ul>
 <h2 id="further-resources"><a class="header" href="#further-resources">further resources</a></h2>
 <ul>
