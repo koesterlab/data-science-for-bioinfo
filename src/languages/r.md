@@ -27,6 +27,10 @@ If you have programmed before and want to learn how to use R for data analysis, 
 It introduces both concepts and tools in a very accessible way, including example code and coding excercises.
 It is based on the [tidyverse](#tidyverse) packages.
 
+## Computational Genomics with R
+
+The free online book [Computational Genomics with R](http://compgenomr.github.io/book/) provides foundational knowledge in computational biology, covering genome biology and R programming, with exercises at the end of each chapter.
+
 ## tidyverse
 
 Use the [tidyverse](https://www.tidyverse.org/) for modern, vectorized, and efficient code, with excellent documentation (and cool package badges;).
