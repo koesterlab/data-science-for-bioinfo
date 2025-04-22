@@ -924,8 +924,10 @@ Then you can load the full workspace and interactively explore / debug what’s 
 <h5 id="logging-1"><a class="header" href="#logging-1">logging</a></h5>
 <p>Standard code we use for redirecting any <code>stderr</code> output to the <code>log:</code> file specified in the rule calling the python script:</p>
 <pre><code class="language-python">import sys
-sys.stderr = open(snakemake.log[0], "w")
+sys.stderr = open(snakemake.log[0], "w", buffering=1)
 </code></pre>
+<p>Here, the <code>buffering=1</code> ensures that line buffering is used, so that <code>stderr</code> lines are written to the log file whenever a full line is available.
+This avoids information not getting printed before throwing an error due to some longer buffering.</p>
 <h5 id="interactive-debugging-1"><a class="header" href="#interactive-debugging-1">interactive debugging</a></h5>
 <p>Inserting the following into a python script executed in a snakemake rule will throw you into an interactive python debugging shell where you have access to the current state, including <code>locals()</code> and <code>globals()</code> variables:</p>
 <pre><code class="language-python">import pdb; pdb.set_trace()
