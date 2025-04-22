@@ -74,8 +74,10 @@ Standard code we use for redirecting any `stderr` output to the `log:` file spec
 
 ```python
 import sys
-sys.stderr = open(snakemake.log[0], "w")
+sys.stderr = open(snakemake.log[0], "w", buffering=1)
 ```
+Here, the `buffering=1` ensures that line buffering is used, so that `stderr` lines are written to the log file whenever a full line is available.
+This avoids information not getting printed before throwing an error due to some longer buffering.
 
 ##### interactive debugging
 
