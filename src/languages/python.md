@@ -31,3 +31,10 @@ There's also a newer `python` library for tabular data, called [`polars`](https:
 It has a more efficient implementation and a cleaner usage syntax.
 However, it is not as widely adopted and will not work on some older computers, so the current go-to recommendation is still `pandas`.
 And while `polars` is probably the future for tabular data in python, a transition from `pandas` to `polars` won't be too difficult.
+
+## packaging python code
+
+If you want to make your code usable across multiple of your own projects, or for any other user online, you will need to put it into a package.
+The python packaging ecosystem has always been very "dynamic", so it is hard to know where to start: which tools to use, which files to fill, what their exact syntax is, what the latest best practices are.
+To get started, I have found the [`pyOpenSci` tutorial for creating a pure python package](https://www.pyopensci.org/python-package-guide/tutorials/create-python-package.html) a very good place.
+And if you need further information on packaging, read through the other materials on that website and follow the linkouts they always provide for more background.
