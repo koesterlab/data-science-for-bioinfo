@@ -11,7 +11,9 @@ We list some tools for these tasks in the [section `analysis of differentially e
 
 ## data generation / experimental design
 
-A good recap of available research and recommendations is given in the [section `Designing better RNA-seq experiments`](https://www.nature.com/articles/s41576-019-0150-2#Sec13) of this review paper:
+The book [`Modern Statistics for Modern Biology`](https://www.huber.embl.de/msmb/) provudes a very good and thorough [introduction to experimental design for high-throughput experiments](https://www.huber.embl.de/msmb/13-chap.html), which highlights the most important points to consider.
+
+For further reading, a good recap of available research and recommendations is given in the [section `Designing better RNA-seq experiments`](https://www.nature.com/articles/s41576-019-0150-2#Sec13) of this review paper:
 
 [Stark, R., Grzelak, M. & Hadfield, J. **RNA sequencing: the teenage years.** *Nat Rev Genet* 20, 631–656 (2019). https://doi.org/10.1038/s41576-019-0150-2](https://doi.org/10.1038/s41576-019-0150-2)
 
