@@ -73,4 +73,12 @@ rsync -avP folder <user>@<dest_server_address>:/abs/dest/path/folder
 ```
 ### Data compression during the transfer
 
-In case of bandwidth shortage and in order to speed up the transfer, `-z` option can be added and `-azvP` can be used.
+In case you have a very limited transfer bandwidth, for example when accessing a network through a bottlenecked connection, you might be able to speed up the transfer by compressing files for the transfer.
+This can be done using the following option:
+```
+--compress, -z           compress file data during the transfer
+```
+Together with the above recommendations, the command then becomes `rsync -azvP`.
+
+However, please note that this can also slow down the transfer, if the compression on the sending machine (or the decompression on the receiving machine) becomes an even tighter the bottleneck.
+For recommendations on how to test whether compression increases (or decreases) your transfer speed, see [this answer to the `serverfault` question `Should I use rsync compression over a gigabit LAN?` ](https://serverfault.com/a/746375/959769).
