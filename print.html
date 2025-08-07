@@ -1065,6 +1065,14 @@ In that case, you simply make the server address and path your source, and you l
 So if you are for example in a folder <code>/home/user42/</code> that holds a subfolder <code>folder/</code>, you can do:</p>
 <pre><code>rsync -avP folder &lt;user&gt;@&lt;dest_server_address&gt;:/abs/dest/path/folder
 </code></pre>
+<h3 id="data-compression-during-the-transfer"><a class="header" href="#data-compression-during-the-transfer">Data compression during the transfer</a></h3>
+<p>In case you have a very limited transfer bandwidth, for example when accessing a network through a bottlenecked connection, you might be able to speed up the transfer by compressing files for the transfer.
+This can be done using the following option:</p>
+<pre><code>--compress, -z           compress file data during the transfer
+</code></pre>
+<p>Together with the above recommendations, the command then becomes <code>rsync -azvP</code>.</p>
+<p>However, please note that this can also slow down the transfer, if the compression on the sending machine (or the decompression on the receiving machine) becomes an even tighter the bottleneck.
+For recommendations on how to test whether compression increases (or decreases) your transfer speed, see <a href="https://serverfault.com/a/746375/959769">this answer to the <code>serverfault</code> question <code>Should I use rsync compression over a gigabit LAN?</code> </a>.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/servers/data_transfer.md">Edit this page on GitHub.</a></footer>
                     </main>
 
