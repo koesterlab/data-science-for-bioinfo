@@ -71,3 +71,6 @@ So if you are for example in a folder `/home/user42/` that holds a subfolder `fo
 ```
 rsync -avP folder <user>@<dest_server_address>:/abs/dest/path/folder
 ```
+### Data compression during the transfer
+
+In case of bandwidth shortage and in order to speed up the transfer, `-z` option can be added and `-azvP` can be used.
