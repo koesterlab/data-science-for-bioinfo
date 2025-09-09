@@ -83,6 +83,9 @@ This is also available for [VS Code via the `R` (or `REditorSupport`) extensions
 
 ## Rstudio: an integrated development environment tailor-made for R
 
+**Posit PBC (formerly RStudio) are developing the integrated development environment [Positron](https://positron.posit.co/) as a more modern replacement for RStudio, which also integrates Python support.**
+**Please see the respective [Positron section of the IDE page](../conding_tools/ide.md#positron).**
+
 Rstudio is an IDE dedicated to R, and probably the most comprehensive IDE for this language and very easy to get going with a productive workflow.
 You can get the free desktop version for your operating system on posit's [Rstudio download page](https://posit.co/download/rstudio-desktop/#download).
 
@@ -94,12 +97,6 @@ So just copy and paste them, and start modifying them to your needs.
 
 If you are using Ubuntu as your operating system and want to install R (and R packages) through conda, here's a useful trick:
 - Getting Rstudio to use a conda environment with your R installation on Ubuntu: [https://gist.github.com/dlaehnemann/8126c903d560307cb246fa26b52d10de](https://gist.github.com/dlaehnemann/8126c903d560307cb246fa26b52d10de)
-
-### alternative IDE: `R` (`REditorSupport`) extension for VS Code
-
-[https://github.com/REditorSupport/vscode-R](https://github.com/REditorSupport/vscode-R)
-
-Provides full language support for R in VS Code, including code completion, formatting, syntax highlighting, plot and data views, etc. This should make VS Code configurable in the same way that RStudio works.
 
 ## debugging / error handling
 
