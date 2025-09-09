@@ -12,7 +12,7 @@ Several people in our group currently use it, with the possibility to [work on a
 ### recommended VS Code plugins
 
 VS Code has a very lively [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace) that provides lots of useful plugins.
-However, as extension can potentially execute malicious code on your machine, please do at least [a basic check whether extensions are safe to install](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security#_determine-extension-reliability).
+**However, as extension can potentially execute malicious code on your machine, please do at least [a basic check whether extensions are safe to install](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security#_determine-extension-reliability).**
 
 Here are some that have proven very useful to us:
 
@@ -34,13 +34,13 @@ The docs even offer migration guides for [Rstudio (Workbench)](https://positron.
 Positron supports Quarto documents and integrates jupyter notebooks, scripts, consoles, and interactive outputs into a unified workspace (rather than an R project), has its own data explorer, AI assistant (Positron assistant), and supports [VSCode extensions](#recommended-vs-code-plugins).
 Further, Positron provides essential data analysis workflow functionality via built in extensions, for example [remote ssh sessions](https://positron.posit.co/remote-ssh.html) and [git version control](https://positron.posit.co/git.html).
 
-And if you prefer watching a video to get a quick tour of Positron, see: https://www.youtube.com/watch?v=4Ir_HX4riHw
+There's also a [Posit video with a quick tour of Positron](https://www.youtube.com/watch?v=4Ir_HX4riHw), if this is your prefered mode of learning.
 
 ### recommended Positron plugins
 
 Positron uses [Open VSX](https://open-vsx.org/), an open-source marketplace for VS Code extensions.
 As such, you can mostly choose from the same extensions as for VS Code, so have a look at the [VS Code recommendations above](#recommended-vs-code-plugins).
-But please note that [Open VSX is only starting to implement security checks for extensions](https://github.com/EclipseFdn/open-vsx.org/issues/5096), so the [checks suggested for credibility of extensions for VS Code are even more import for this marketplace](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security#_determine-extension-reliability).
+**But please note that [Open VSX is only starting to implement security checks for extensions](https://github.com/EclipseFdn/open-vsx.org/issues/5096), so the [checks suggested for credibility of extensions for VS Code are even more import for this marketplace](https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security#_determine-extension-reliability).**
 Hopefully, it will have much more extensive marketplace protections in the near future.
 
 Note that Positron comes with a number of [vetted and builtin VS Code extensions](https://positron.posit.co/extensions.html#built-in-extensions), which you can list by searching for `@builtin` in the extensions Extensions tab of the left sidebar (blocks symbol).
