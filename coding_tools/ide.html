@@ -185,15 +185,36 @@ It has <a href="https://code.visualstudio.com/docs">extensive documentation</a>,
 Several people in our group currently use it, with the possibility to <a href="https://code.visualstudio.com/docs/remote/ssh">work on a remote project on a server via ssh</a> a very useful and heavily used feature.</p>
 <h3 id="recommended-vs-code-plugins"><a class="header" href="#recommended-vs-code-plugins">recommended VS Code plugins</a></h3>
 <p>VS Code has a very lively <a href="https://code.visualstudio.com/docs/editor/extension-marketplace">Extension Marketplace</a> that provides lots of useful plugins.
-Here are some that have proven very useful to us:</p>
+However, as extension can potentially execute malicious code on your machine, please do at least <a href="https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security#_determine-extension-reliability">a basic check whether extensions are safe to install</a>.</p>
+<p>Here are some that have proven very useful to us:</p>
 <ul>
-<li>The <a href="https://code.visualstudio.com/docs/remote/ssh"><code>remote ssh</code></a> extension enables you to log onto a server via an <a href="../servers/ssh.html"><code>ssh</code> connection</a>. You can then open a project folder and browse and edit files, while you can also open a Terminal / shell to run commands.</li>
+<li>The <a href="https://code.visualstudio.com/docs/remote/ssh"><code>Remote - SSH</code></a> extension enables you to log onto a server via an <a href="../servers/ssh.html"><code>ssh</code> connection</a>. You can then open a project folder and browse and edit files, while you can also open a Terminal / shell to run commands.</li>
 <li>The <a href="https://github.com/snakemake/snakemake-lang-vscode-plugin#snakemake-language-support"><code>snakemake</code></a> extension gives you syntax highlighting for <code>Snakefile</code>s.</li>
 <li>The <a href="https://github.com/mechatroner/vscode_rainbow_csv#rainbow-csv"><code>Rainbow CSV</code></a> extension gives you systematic per-column colors in comma-separated and tab-separated value files.</li>
 <li>The <a href="https://github.com/janisdd/vscode-edit-csv"><code>Edit CSV</code></a> extension allows you to edit <code>.csv</code> and <code>.tsv</code> files in a tabular view, so that you can create and delete columns and rows, and copy-paste things.</li>
 </ul>
 <p>In addition, VS Code will often offer you to install plugins for filetypes you open, or for languages that you use.
 Explore.</p>
+<h2 id="positron"><a class="header" href="#positron">Positron</a></h2>
+<p><a href="https://positron.posit.co/">Positron</a> is a free, next-generation, multi-language integrated development environment (IDE) built on Code OSS, the same base as <a href="#microsoft-visual-studio-code">Microsoft Visual Studio Code</a>.
+It was designed specifically for data science by <a href="https://posit.co/">Posit PBC</a> (formerly RStudio) and offers native support for Python and R, making it easy to switch between different versions of these languages.
+From a user perspective, it is basically a <a href="https://positron.posit.co/layout.html">mixup between the user interfaces of Rstudio and VS Code</a>, so migration should be relatively easy of you are familiar with either, or both.
+The docs even offer migration guides for <a href="https://positron.posit.co/migrate-rstudio.html">Rstudio (Workbench)</a> and <a href="https://positron.posit.co/migrate-vscode.html">VS Code</a>.</p>
+<p>Positron supports Quarto documents and integrates jupyter notebooks, scripts, consoles, and interactive outputs into a unified workspace (rather than an R project), has its own data explorer, AI assistant (Positron assistant), and supports <a href="#recommended-vs-code-plugins">VSCode extensions</a>.
+Further, Positron provides essential data analysis workflow functionality via built in extensions, for example <a href="https://positron.posit.co/remote-ssh.html">remote ssh sessions</a> and <a href="https://positron.posit.co/git.html">git version control</a>.</p>
+<p>And if you prefer watching a video to get a quick tour of Positron, see: https://www.youtube.com/watch?v=4Ir_HX4riHw</p>
+<h3 id="recommended-positron-plugins"><a class="header" href="#recommended-positron-plugins">recommended Positron plugins</a></h3>
+<p>Positron uses <a href="https://open-vsx.org/">Open VSX</a>, an open-source marketplace for VS Code extensions.
+As such, you can mostly choose from the same extensions as for VS Code, so have a look at the <a href="#recommended-vs-code-plugins">VS Code recommendations above</a>.
+But please note that <a href="https://github.com/EclipseFdn/open-vsx.org/issues/5096">Open VSX is only starting to implement security checks for extensions</a>, so the <a href="https://code.visualstudio.com/docs/configure/extensions/extension-runtime-security#_determine-extension-reliability">checks suggested for credibility of extensions for VS Code are even more import for this marketplace</a>.
+Hopefully, it will have much more extensive marketplace protections in the near future.</p>
+<p>Note that Positron comes with a number of <a href="https://positron.posit.co/extensions.html#built-in-extensions">vetted and builtin VS Code extensions</a>, which you can list by searching for <code>@builtin</code> in the extensions Extensions tab of the left sidebar (blocks symbol).
+Among them, is the <code>Open Remote - SSH</code> plugin, equivalent to the <code>Remote - SSH</code> extension mentioned above, so there's no need to install that yourself.</p>
+<p>In addition, there are a couple of useful extension functionalities that Positron does not have built in (yet):</p>
+<ul>
+<li>The <a href="https://open-vsx.org/extension/tomoki1207/pdf"><code>vscode-pdf</code></a> extension is a PDF viewer, which is also <a href="https://github.com/posit-dev/positron/issues/4201#issuecomment-2955973660">recommended by the Posit PBC team until there is built in support</a>.</li>
+<li>The <a href="https://open-vsx.org/extension/alefragnani/project-manager"><code>Project Manager</code></a> extension, also <a href="https://positron.posit.co/migrate-rstudio-rproj.html#launch-from-the-project-manager-extension">recommended by Posit PBC</a>, allows you to manage a folder as a unique workspace for a project.</li>
+</ul>
 <h2 id="jet-brains"><a class="header" href="#jet-brains">Jet Brains</a></h2>
 <p>Jet Brains develops a <a href="https://www.jetbrains.com/products/#type=ide-vs">suite of IDEs for different languages</a> (just use the language filter on the right) and offers a <a href="https://www.jetbrains.com/community/education/#students">free version for academic purposes</a>.</p>
 <footer id="open-on-gh">Want to add or correct something? <a href="https://github.com/koesterlab/data-science-for-bioinfo/edit/main/src/coding_tools/ide.md">Edit this page on GitHub.</a></footer>
