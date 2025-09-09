@@ -84,7 +84,7 @@ This is also available for [VS Code via the `R` (or `REditorSupport`) extensions
 ## Rstudio: an integrated development environment tailor-made for R
 
 **Posit PBC (formerly RStudio) are developing the integrated development environment [Positron](https://positron.posit.co/) as a more modern replacement for RStudio, which also integrates Python support.**
-**Please see the respective [Positron section of the IDE page](../conding_tools/ide.md#positron).**
+**Please see the respective [Positron section of the IDE page](../coding_tools/ide.md#positron).**
 
 Rstudio is an IDE dedicated to R, and probably the most comprehensive IDE for this language and very easy to get going with a productive workflow.
 You can get the free desktop version for your operating system on posit's [Rstudio download page](https://posit.co/download/rstudio-desktop/#download).
