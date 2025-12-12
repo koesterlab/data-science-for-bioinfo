@@ -107,7 +107,7 @@ Jump right in by looking at the [`air` documentation](https://posit-dev.github.i
 
 [`styler`](https://styler.r-lib.org/) used to be the de facto standard for automatic formatting according to the tidyverse style guide.
 However, it has [mostly been superseded by `air`, unless you need a highly configurable formatter](https://tidyverse.org/blog/2025/02/air/#how-is-this-different-from-styler).
-It is also available for [VS Code via the `R` (or `REditorSupport`) extensions](#alternative-ide-r-reditorsupport-extension-for-vs-code) and has [integrations for other development tooling](https://styler.r-lib.org/articles/third-party-integrations.html).
+It is also available for [VS Code or Positron via the `REditorSupport` extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r) and has [integrations for other development tooling](https://styler.r-lib.org/articles/third-party-integrations.html).
 
 ## linting
 
