@@ -14,10 +14,17 @@ Thus, for anything where we need configuration files that should be readable by 
 
 ## debugging YAML
 
-For a very strict `yaml` linter, check out [`yamllint`](https://yamllint.readthedocs.io/en/stable/).
-It is available via the `conda-forge` channel, so you can install it into its own `yamllint` conda/mamba evnironment with:
+To get line-specific infos on `yaml` formatting issues, you can use [`prettier`](https://prettier.io/docs/), an opinionated code formatter that supports `yaml` among a bunch of other formats.
+It is available via the `conda-forge` channel, so you can install it into its own `prettier` conda environment with:
 ```
-mamba create -n yamllint yamllint
+conda create --channel conda-forge -n prettier prettier
+conda activate prettier
+```
+
+You can then run it on a yaml file using the `--check` flag to pinpoint formatting issues.
+For example, on a file `config.yaml` in the `config/` subdirectory, this would be:
+```
+prettier --check config/config.yaml
 ```
 
 ## YAML specification
