@@ -636,9 +636,14 @@ Thus, for anything where we need configuration files that should be readable by 
 <li><a href="https://www.yaml.info/learn/bestpractices.html">best practices</a></li>
 </ul>
 <h2 id="debugging-yaml"><a class="header" href="#debugging-yaml">debugging YAML</a></h2>
-<p>For a very strict <code>yaml</code> linter, check out <a href="https://yamllint.readthedocs.io/en/stable/"><code>yamllint</code></a>.
-It is available via the <code>conda-forge</code> channel, so you can install it into its own <code>yamllint</code> conda/mamba evnironment with:</p>
-<pre><code>mamba create -n yamllint yamllint
+<p>To get line-specific infos on <code>yaml</code> formatting issues, you can use <a href="https://prettier.io/docs/"><code>prettier</code></a>, an opinionated code formatter that supports <code>yaml</code> among a bunch of other formats.
+It is available via the <code>conda-forge</code> channel, so you can install it into its own <code>prettier</code> conda environment with:</p>
+<pre><code>conda create --channel conda-forge -n prettier prettier
+conda activate prettier
+</code></pre>
+<p>You can then run it on a yaml file using the <code>--check</code> flag to pinpoint formatting issues.
+For example, on a file <code>config.yaml</code> in the <code>config/</code> subdirectory, this would be:</p>
+<pre><code>prettier --check config/config.yaml
 </code></pre>
 <h2 id="yaml-specification"><a class="header" href="#yaml-specification">YAML specification</a></h2>
 <p><a href="https://yaml.org/spec/1.2/">ALL the gory details in the official specification</a>.</p>
