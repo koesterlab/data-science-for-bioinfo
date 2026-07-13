@@ -38,6 +38,9 @@
   - [grammar of graphics](data_presentation/grammar_of_graphics.md)
   - [interactive reporting](coding_tools/interactive_reporting.md)
 
+- [Debugging](debugging/README.md)
+  - [debugging](debugging/debugging.md)
+
 - [Programming Languages](languages/README.md)
   - [python](languages/python.md)
   - [R](languages/r.md)
