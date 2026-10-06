@@ -3,8 +3,6 @@ Protein biosynthesis is a very complex process. We will not go into the details 
 
 Protein biosynthesis is the central framework for placing the individual omics fields. It consists of transcription + (processing) + translation. In essence, the DNA information inside the nucleus is copied to RNA, carried out into the cytoplasm (the cell interior outside the nucleus) and translated into proteins there.
 
-![Gene → RNA → mRNA → protein](biosynthesis.png)
-source: https://www.britannica.com/science/gene
 
 ## Basic Definitions
 
